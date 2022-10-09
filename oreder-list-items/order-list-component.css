@@ -1,7 +1,9 @@
 .cake-list-container {
     padding: 4% !important;
 }
-
+.header-navbar{
+    background: #1a3771!important;
+}
 .dollar-icon {
     float: left;
 }
@@ -16,7 +18,7 @@
 
 .nav-link.active,
 .MainButton:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0) !important;
 }
 
 #InternalNavbar {
