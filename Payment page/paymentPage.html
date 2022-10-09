@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylePaymentPage.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Cake</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a id="MainButton" class="nav-link" href="#">Product Catalog</a> </li>
+                    <li class="nav-item"><a id="MainButton" class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a id="MainButton" class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+                <a class="navbar-nav ml-auto">Herzl 34, Yavne</a>
+            </div>
+        </nav>
+
+        <nav class="ui mini steps container-fluid">
+            <a class="completed step">
+                <i class="eye icon"></i>
+                <div class="content">
+                    <div class="title">Shopping cart</div>
+                </div>
+            </a>
+            <a class="completed step">
+                <i class="pencil alternate icon"></i>
+                <div class="content">
+                    <div class="title">Order page</div>
+                </div>
+            </a>
+            <a class="active step">
+                <i class="dollar icon"></i>
+                <div class="content">
+                    <div class="title">Payment page</div>
+                </div>
+            </a>
+            <a class="step">
+                <i class="paper plane outline icon"></i>
+                <div class="content">
+                    <div class="title">Order Confirmation</div>
+                </div>
+            </a>
+
+        </nav>
+
+        <div class="CartContainer container-fluid">
+            <div class="Header">
+                <h3 class="Heading">Payment page</h3>
+            </div>
+
+            <form class="ui form">
+                <h4 class="ui dividing header">Billing Information</h4>
+                <div class="required field">
+                    <label>Card Type</label>
+                    <select class="ui fluid search dropdown" name="card[type]">
+                        <option value="">Card Type</option>
+                        <option value="visa">visa</option>
+                        <option value="American Express">American Express</option>
+                        <option value="Max">Max</option>
+                    </select>
+
+                </div>
+
+
+                <div class="required fields">
+                    <div class="seven wide field">
+                        <label>Card Number</label>
+                        <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
+                    </div>
+                    <div class="required three wide field">
+                        <label>CVC</label>
+                        <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+                    </div>
+                    <div class="required six wide field">
+                        <label>Expiration</label>
+                        <div class="two fields">
+                            <div class="field">
+                                <select class="ui fluid search dropdown" name="card[expire-month]">
+                                    <option value="">Month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="button">Submit Order</button>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
