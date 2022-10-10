@@ -62,36 +62,39 @@
         </nav>
 
         <div class="CartContainer container-fluid">
-            <div class="Header">
-                <h3 class="Heading">Shopping Cart</h3>
-                <h5 class="Action">Remove all</h5>
-            </div>
-
-            <div class="Cart-Items">
-                <div class="image-box">
-                    <!--  <img src="https://www.delitlv.co.il/media/catalog/product/cache/7595aa98be7afa785ed6917e87c1f761/8/1/81400-1.jpg"
-                    alt="">-->
-                    <img src="תמונה2.jpg" alt="">
-                </div>
-                <div class="about">
-                    <h1 class="title">Cheesecake and biscuit</h1>
-                    <h3 class="subtitle">Biscuit layer cake with cream cheese and vanilla</h3>
-                </div>
-                <div class="counter">
-                    <div class="btn">-</div>
-                    <div class="count">1</div>
-                    <div class="btn">+</div>
-                </div>
-                <div class="prices">
-                    <div class="amount">150 &#8362</div>
-                    <div class="remove"><u>Remove</u></div>
+            <div class="row">
+                <div class="Header">
+                    <h3 class="Heading">Shopping Cart</h3>
+                    <h5 class="Action">Remove all</h5>
                 </div>
             </div>
 
+            <div class="row">
+                <div class="Cart-Items">
+                    <div class="image-box">
+                        <img src="תמונה2.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        <h1 class="title">Cheesecake and biscuit</h1>
+                        <h3 class="subtitle">Biscuit layer cake with cream cheese and vanilla</h3>
+                    </div>
+                    <div class="counter">
+                        <div class="btn">-</div>
+                        <div class="count">1</div>
+                        <div class="btn">+</div>
+                    </div>
+                    <div class="prices">
+                        <div class="amount">150 &#8362</div>
+                        <!-- <div class="remove"><u>Remove</u></div> -->
+
+                    </div>
+                    <div class="remove">
+                        <img src="תמונה4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
             <div class="Cart-Items pad">
                 <div class="image-box">
-                    <!--  <img src="https://www.delitlv.co.il/media/catalog/product/cache/7595aa98be7afa785ed6917e87c1f761/8/1/81189-1_2_.jpg"
-                    alt=""> -->
                     <img src="תמונה3.jpg" alt="">
                 </div>
                 <div class="about">
@@ -105,13 +108,17 @@
                 </div>
                 <div class="prices">
                     <div class="amount">150 &#8362</div>
-                    <div class="remove"><u>Remove</u></div>
+                    <!-- <div class="remove"><u>Remove</u></div> -->
+
+                </div>
+                <div class="remove">
+                    <img src="תמונה4.jpg" alt="">
                 </div>
             </div>
 
             <div class="field">
                 <label>shipping</label>
-                <select class="ui fluid dropdown">
+                <select class="ui small fluid dropdown">
                     <option value="">Select shipping</option>
                     <option value="Pickup">Pickup from Yavne</option>
                     <option value="Dimona">Dimona</option>
@@ -147,7 +154,10 @@
                 </div>
                 <div>
                     <button class="button">Continue shopping</button>
-                    <button class="button">Checkout</button>
+                    <!-- link dont work -->
+                    <a href="orderPage.html" title='Checkout'>
+                        <button class="button">Checkout</button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -34,12 +34,15 @@
         </nav>
 
         <nav class="ui mini steps container-fluid">
+            <!--  <a href="paymentPage.html" title='Next'>-->
             <a class="completed step">
                 <i class="eye icon"></i>
+
                 <div class="content">
                     <div class="title">Shopping cart</div>
                 </div>
             </a>
+            <!--  </a>-->
             <a class="active step">
                 <i class="pencil alternate icon"></i>
                 <div class="content">
@@ -62,40 +65,38 @@
         </nav>
 
         <div class="CartContainer container-fluid">
-            <div class="Header">
-                <h3 class="Heading">Order page</h3>
-            </div>
+
 
             <form class="ui form">
                 <h4 class="ui dividing header">Shipping Information</h4>
-                <div class="required field">
-                    <label>Name</label>
-                    <div class="two fields">
-                        <div class="field">
-                            <input type="text" name="shipping[first-name]" placeholder="First Name">
-                        </div>
-                        <div class="field">
-                            <input type="text" name="shipping[last-name]" placeholder="Last Name">
-                        </div>
+                <div class="two fields">
+                    <div class="required field">
+                        <label>First Name</label>
+                        <input type="text" name="shipping[first-name]" placeholder="First Name">
+                    </div>
+                    <div class="required field">
+                        <label>Last Name</label>
+                        <input type="text" name="shipping[last-name]" placeholder="Last Name">
                     </div>
                 </div>
-                <div class="required field">
-                    <label>contact</label>
-                    <div class="two fields">
-                        <div class="field">
-                            <input type="text" maxlength="10" name="shipping[phone]" placeholder="phone">
-                        </div>
-                        <div class="field">
-                            <input type="text" name="shipping[E-mail]" placeholder="avior@hodayaBaykery.com">
-                        </div>
+                <div class="two fields">
+                    <div class="required field">
+                        <label>Phone</label>
+                        <input type="text" maxlength="10" name="shipping[phone]" placeholder="Phone">
+                    </div>
+                    <div class="required field">
+                        <label>E-mail</label>
+                        <input type="text" name="shipping[E-mail]" placeholder="avior@hodayaBaykery.com">
                     </div>
                 </div>
                 <div class="required field">
                     <label>Address</label>
-                    <p> Our deliveries are on Sunday-Friday. Minimum order 150 NIS and on holidays 200 NIS. Day-to-day
+                    <p> Our deliveries are on Sunday-Friday. Minimum order 150 NIS and on holidays 200 NIS.
+                        Day-to-day
                         deliveries - can be made until 12:00 on the same day </p>
                     <div class="three fields">
-                        <div class="field">
+                        <div class="required field">
+                            <label>City</label>
                             <select class="ui fluid dropdown">
                                 <option value="">Select city</option>
                                 <option value="Pickup">Pickup from Yavne</option>
@@ -104,14 +105,17 @@
                                 <option value="Ariel">Ariel</option>
                             </select>
                         </div>
-                        <div class="field">
+                        <div class="required field">
+                            <label>Street</label>
                             <input type="text" name="shipping[address]" placeholder="Street Address">
                         </div>
-                        <div class="field">
+                        <div class="required field">
+                            <label>Apartment number</label>
                             <input type="text" name="shipping[address-2]" placeholder="Apt #">
                         </div>
                     </div>
                 </div>
+
 
 
                 <div class="ui segment">
@@ -121,18 +125,23 @@
                             <label>I confirm the terms of the site regulations</label>
                         </div>
                     </div>
-                    <div class="required field">
+                    <div class="field">
                         <div class="ui toggle checkbox">
                             <input type="checkbox" name="gift" tabindex="0" class="hidden">
                             <label>I agree to receive mailings, updates and advertisements</label>
                         </div>
                     </div>
                 </div>
-                <button class="button">Next</button>
+
+                <!-- link dont work -->
+                <a href="paymentPage.html" title='Next'>
+                    <button class="button">Next</button>
+                </a>
 
             </form>
-
         </div>
+
+    </div>
     </div>
 </body>
 
