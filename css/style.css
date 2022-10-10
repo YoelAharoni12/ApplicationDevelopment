@@ -50,6 +50,12 @@ p {
     cursor: pointer;
 }
 
+.nav-link.active,
+.MainButton:hover {
+    color: rgb(255, 0, 0) !important;
+}
+
+
 .btn:hover {
     background: #84151b;
 }
@@ -105,15 +111,17 @@ p {
 }
 
 #hero .hero-content {
-    color:  #fff;
+    color: #fff;
     text-align: center;
     padding-top: 170px;
 }
+
 #hero .hero-content h1 {
     font-size: 60px;
     line-height: 120%;
 }
-.footer-menu{
+
+.footer-menu {
     margin-top: 1%;
     height: 20%;
 }
