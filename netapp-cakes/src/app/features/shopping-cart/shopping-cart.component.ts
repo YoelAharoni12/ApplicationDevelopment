@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CartService} from "../../core/services/cart.service";
 import {Cake} from "../../shared/models/cake";
-import {Observable} from "rxjs";
+import {map, Observable} from "rxjs";
 
 @Component({
   selector: 'app-shopping-cart',
@@ -28,6 +28,31 @@ export class ShoppingCartComponent implements OnInit {
 
   resetCart() {
     this.cartService.resetCart()
+  }
+
+  addamount(cartItem: { cake: Cake; amount: number }) {
+    this.cartService.updateProductAmount(cartItem.cake.name, ++cartItem.amount)
+  }
+
+  decreaseAmount(cartItem: { cake: Cake; amount: number }) {
+    if (cartItem.amount === 0) {
+      return
+    }
+    this.cartService.updateProductAmount(cartItem.cake.name, --cartItem.amount)
+  }
+
+  applyCoupon() {
+    // @ts-ignore
+    const coupon = parseInt(document.getElementsByClassName('coupon-text')[0].value);
+
+    this.totalPrice$ = this.totalPrice$.pipe(map((totalPrice) => {
+      if (totalPrice === 0) {
+        return 0
+      }
+      return totalPrice - coupon
+    }))
+    // @ts-ignore
+    document.getElementsByClassName('coupon-text')[0].value = ''
   }
 
 }

@@ -10,6 +10,7 @@ import { NavBarComponent } from './features/nav-bar/nav-bar.component';
 import { SignInComponent } from './features/sign-in/sign-in.component';
 import { MainSiteComponent } from './features/main-site/main-site.component';
 import { ShoppingCartComponent } from './features/shopping-cart/shopping-cart.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ShoppingCartComponent } from './features/shopping-cart/shopping-cart.co
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
