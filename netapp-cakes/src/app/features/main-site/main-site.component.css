@@ -1,0 +1,196 @@
+.nav-item.active {
+  color: rgb(224, 120, 172);
+}
+
+.bg-primary {
+  color: white;
+}
+
+.nav-link.active,
+#MainButton:hover {
+  color: rgb(255, 0, 0);
+}
+
+#InternalNavbar {
+  height: 100px;
+}
+
+#main_nav {
+  justify-content: center;
+}
+
+.logo-cake {
+  text-align: right;
+  margin: 0 !important;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  /*position: senter;*/
+  color: #f1f1f1;
+
+  padding-bottom: 30%;
+  background: url('../../../assets/img/hero.jpg') no-repeat center 35% / cover;
+  height: 600px;
+}
+
+#myBtn {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background:blue;
+  color: #fff;
+  border-radius: 25px;
+  align-items: center;
+
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+  text-align: center;
+  align-items: center;
+
+
+}
+#h1main{
+  text-align: center;
+  color: #ffb6c1;
+}
+#p-main{
+  text-align: center;
+  color: black;
+}
+
+#hero {
+  background: url('../../../assets/img/KPStudio.co_.il_English-Cake-–-Cakes-and-pastries-shop-2-min.jpg') no-repeat center 35% / cover;
+  height: 600px;
+
+}
+
+#hero .hero-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+#hero .hero-content h1 {
+  font-size: 60px;
+  line-height: 120%;
+}
+
+#hero .hero-content p {
+  padding: 10px;
+  font-size: x-large;
+}
+
+
+#home-experience {
+  height: 400px;
+  border: 3px solid #222;
+  float: left;
+
+
+}
+#home-experience .experience-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  color: #222;
+  border-left: 3px solid #222;
+}
+
+#home-experience .experience-content p {
+  padding: 30px 0;
+  color: black;
+}
+/* Features */
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+  max-height: 320px;
+}
+
+.box h3 {
+  margin: 20px 0;
+}
+
+.flag-left {
+  background: #ffb6c1;
+  color: #fff;
+}
+
+.flag-middle {
+  background: #f4f5f0;
+}
+
+.flag-right {
+  background: blue;
+  color: #fff;
+}
+
+
+.cake-list-container {
+  padding: 4% !important;
+}
+.header-navbar{
+  background: #1a3771!important;
+}
+.dollar-icon {
+  float: left;
+}
+
+.nav-item.active {
+  color: rgb(224, 120, 172);
+}
+
+.bg-primary {
+  color: white;
+}
+
+.nav-link.active,
+.MainButton:hover {
+  color: rgb(255, 0, 0) !important;
+}
+
+#InternalNavbar {
+  height: 100px;
+}
+
+.main_nav {
+  justify-content: center;
+}
+
+.logo-cake {
+  text-align: right;
+  margin: 0 !important;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.left-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
