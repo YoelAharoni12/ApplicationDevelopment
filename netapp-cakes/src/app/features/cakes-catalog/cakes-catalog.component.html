@@ -120,13 +120,13 @@
   <h2 class="text-center">cakes of birthday</h2>
   <hr class="bg-dark border-2 border-top border-dark">
   <div class="row row-cols-1 row-cols-md-4 ">
-    <div class="col" *ngFor="let cake of cakes$|async">
-      <div class="card h-100 cards-yoel">
+    <div class="col cards-column" *ngFor="let cake of cakes$|async">
+      <div class="card h-100">
         <img src="{{cake.image}}" class="card-img-top" alt="../assets/img/cake-4034386.jpg">
         <div class="card-body">
           <h5 class="card-title">{{cake.name}}</h5>
           <p class="card-text">{{cake.description}}</p>
-          <b class="dollar-icon"><i class=" bi bi-currency-dollar">{{cake.price}}</i></b>
+          <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
         </div>
         <div class="d-grid gap-2" *ngIf="!isincart(cake.name);else elseBlock">
           <button class="rounded-2 btn btn-primary btn-lg" type="button" (click)="addCake(cake)">add to cart</button>

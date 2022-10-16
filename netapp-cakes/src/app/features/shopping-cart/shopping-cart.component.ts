@@ -3,6 +3,7 @@ import {CartService} from "../../core/services/cart.service";
 import {Cake} from "../../shared/models/cake";
 import {map, Observable} from "rxjs";
 
+
 @Component({
   selector: 'app-shopping-cart',
   templateUrl: './shopping-cart.component.html',
@@ -10,10 +11,19 @@ import {map, Observable} from "rxjs";
 })
 export class ShoppingCartComponent implements OnInit {
   cartItems: { cake: Cake; amount: number }[] = []
-  quantityCartitems: Observable<number> | undefined
-  totalPrice$!: Observable<number>;
+  quantityCartitems: Observable<number>
+  totalPrice$: Observable<number>;
+  existCopun: boolean = true
 
   constructor(private cartService: CartService) {
+  }
+
+  coupunList = {
+
+    effiCoupon: 100,
+    yoelCoupon: 50,
+    sharifiCoupon: 20
+
   }
 
   ngOnInit(): void {
@@ -41,18 +51,26 @@ export class ShoppingCartComponent implements OnInit {
     this.cartService.updateProductAmount(cartItem.cake.name, --cartItem.amount)
   }
 
+  existCoupun() {
+    // @ts-ignore
+    const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
+    console.log(!!Object.keys(this.coupunList).find(x => x === couponValue))
+    return !!Object.keys(this.coupunList).find(x => x === couponValue)
+  }
+
   applyCoupon() {
     // @ts-ignore
-    const coupon = parseInt(document.getElementsByClassName('coupon-text')[0].value);
-
+    const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
+    const priceOff = Object.keys(this.coupunList).find(x => x === couponValue)
+    this.existCopun = !!Object.keys(this.coupunList).find(x => x === couponValue)
     this.totalPrice$ = this.totalPrice$.pipe(map((totalPrice) => {
       if (totalPrice === 0) {
         return 0
       }
-      return totalPrice - coupon
+      // @ts-ignore
+      return this.existCopun ? totalPrice - this.coupunList[priceOff] : 0;
     }))
-    // @ts-ignore
-    document.getElementsByClassName('coupon-text')[0].value = ''
+
   }
 
 }

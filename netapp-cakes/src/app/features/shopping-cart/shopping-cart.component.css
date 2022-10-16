@@ -69,8 +69,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.btn {
+.apply-btn{
+  margin-left: 11px;
+}
+.options-btn {
   width: 20px;
   /*height: 40px;*/
   border-radius: 50%;

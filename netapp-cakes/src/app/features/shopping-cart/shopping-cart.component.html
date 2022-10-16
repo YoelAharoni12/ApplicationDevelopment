@@ -15,7 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
-<!--  <link rel="stylesheet" type="text/css" href="cakes-catalog.component.css">-->
+  <!--  <link rel="stylesheet" type="text/css" href="cakes-catalog.component.css">-->
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
   <title>חנות הקינוחים של הודיה</title>
 
@@ -167,9 +167,9 @@
           <h3 class="subtitle">{{cartitem.cake.description}}</h3>
         </div>
         <div class="counter">
-          <div class="btn" (click)="decreaseAmount(cartitem)" >-</div>
+          <div class="options-btn" (click)="decreaseAmount(cartitem)">-</div>
           <div class="count" [innerHtml]="cartitem.amount"></div>
-          <div class="btn" (click)="addamount(cartitem)">+</div>
+          <div class="options-btn" (click)="addamount(cartitem)">+</div>
         </div>
         <div class="prices">
           <div class="amount">{{cartitem.cake.price * cartitem.amount}}</div>
@@ -197,10 +197,14 @@
         <div class="cuppon">
           <div>
             <h5>Coupon</h5>
-            <input class="coupon-text" type="text" placeholder="Enter coupon code">
             <div>
-              <button class="button" (click)="applyCoupon()">Apply</button>
-
+              <div class="inline field">
+                <input type="text" class="coupon-text" placeholder="Enter coupon code">
+                <div *ngIf="!existCopun" class="ui left pointing red basic label">
+                  Wrong coupon
+                </div>
+              </div>
+              <button class="apply-btn btn btn-primary btn-md" (click)="applyCoupon()">Apply</button>
             </div>
           </div>
         </div>
@@ -216,10 +220,10 @@
         <div class="total-amount">{{totalPrice$|async}}</div>
       </div>
       <div class="payment-buttons">
-        <button class="button" id="continue-button" routerLink="/cakes-catalog">Continue shopping</button>
+        <button class="btn btn-primary btn-md" id="continue-button" routerLink="/cakes-catalog">Continue shopping</button>
         <!-- link dont work -->
         <a href="orderPage.html" title='Checkout'>
-          <button class="button">Checkout</button>
+          <button class="btn btn-primary btn-md">Checkout</button>
         </a>
       </div>
     </div>
