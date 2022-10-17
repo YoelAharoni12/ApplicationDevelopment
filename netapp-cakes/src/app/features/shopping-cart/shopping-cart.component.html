@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+  <!--  <link rel="stylesheet" type="text/css" href="birthday-cakes.component.css">-->
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+  <title>חנות הקינוחים של הודיה</title>
+
+</head>
+
+<body>
+
+<div class="MainNavbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary header-navbar ">
+    <a class="navbar-brand" href="#">Cake</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse main_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item active"><a class="MainButton nav-link" href="#">Product Catalog</a></li>
+        <li class="nav-item"><a class="MainButton nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="MainButton nav-link" href="#">Contact Us</a></li>
+      </ul>
+      <a class="navbar-nav ml-auto">Herzl 34, Yavne</a>
+    </div>
+  </nav>
+  <div id="InternalNavbar" class="container-fluid row">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse main_nav">
+        <div class="button_display col-0">
+          <button type="button" class="btn position-relative left-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 routerLink="/shoppingCart"
+                 class="bi bi-cart" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                {{quantityCartitems| async}}
+              <span class="visually-hidden">unread messages</span>
+                            </span>
+          </button>
+        </div>
+        <div class="button_display col-3">
+          <button class="left-button">
+            <div class="ui icon input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Search...">
+            </div>
+          </button>
+        </div>
+        <div class="choice_title col-6">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown menu">
+              <a class="nav-link dropdown-toggle link-dark" href="#"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Desserts
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Chocolate mousse</a></li>
+                <li><a class="dropdown-item" href="#">Custard</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown menu">
+              <a class="nav-link dropdown-toggle link-dark" href="#"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cookies
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Chocolate cookies</a></li>
+                <li><a class="dropdown-item" href="#">Nut cookies</a></li>
+                <li><a class="dropdown-item" href="#">Almond cookies</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link link-dark" href="#">Delivery of cakes</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle link-dark" href="#"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordering cakes
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Birthday cakes</a></li>
+                <li><a class="dropdown-item" href="#">Stripe cakes</a></li>
+                <li><a class="dropdown-item" href="#">Sugar-free cakes</a></li>
+                <li><a class="dropdown-item" href="#">Round cakes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h3 class="logo-cake">Cake Shop</h3>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <figure class="figure" style="width: 100%">
+    <img src="../../../assets/img/Cakes.png" class="figure-img img-fluid rounded" alt="">
+  </figure>
+</div>
+<div class="container-fluid row">
+
+  <nav class="ui mini steps container-fluid">
+    <a class="active step">
+      <i class="eye icon"></i>
+      <div class="content">
+        <div class="title">Shopping cart</div>
+      </div>
+    </a>
+    <a class="step">
+      <i class="pencil alternate icon"></i>
+      <div class="content">
+        <div class="title">Order page</div>
+      </div>
+    </a>
+    <a class="step">
+      <i class="dollar icon"></i>
+      <div class="content">
+        <div class="title">Payment page</div>
+      </div>
+    </a>
+    <a class="step">
+      <i class="paper plane outline icon"></i>
+      <div class="content">
+        <div class="title">Order Confirmation</div>
+      </div>
+    </a>
+
+  </nav>
+
+  <div class="CartContainer container-fluid">
+    <div class="row">
+      <div class="Header">
+        <h3 class="Heading">Shopping Cart</h3>
+        <h5 class="Action" (click)="resetCart()">Remove all</h5>
+      </div>
+    </div>
+
+    <div class="row" *ngFor="let cartitem of cartItems">
+      <div class="Cart-Items">
+        <div class="image-box">
+          <img class="img-cartitem" src="{{cartitem.cake.image}}" alt="">
+        </div>
+        <div class="about">
+          <h1 class="title">{{cartitem.cake.name}}</h1>
+          <h3 class="subtitle">{{cartitem.cake.description}}</h3>
+        </div>
+        <div class="counter">
+          <div class="options-btn" (click)="decreaseAmount(cartitem)">-</div>
+          <div class="count" [innerHtml]="cartitem.amount"></div>
+          <div class="options-btn" (click)="addamount(cartitem)">+</div>
+        </div>
+        <div class="prices">
+          <div class="amount">{{cartitem.cake.price * cartitem.amount}}</div>
+        </div>
+        <div class="remove">
+          <img src="../../../assets/img/picture4.jpg" (click)="removeProduct(cartitem.cake.name)" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>shipping</label>
+      <select class="ui small fluid dropdown">
+        <option value="">Select shipping</option>
+        <option value="Pickup">Pickup from Yavne</option>
+        <option value="Dimona">Dimona</option>
+        <option value="Netanya">Netanya</option>
+        <option value="Ariel">Ariel</option>
+      </select>
+    </div>
+    <hr>
+
+    <div class="checkout-section col-lg-6 col-md-6 col-12 mb-4">
+      <div class="down1">
+        <div class="cuppon">
+          <div>
+            <h5>Coupon</h5>
+            <div>
+              <div class="inline field">
+                <input type="text" class="coupon-text" placeholder="Enter coupon code">
+                <div *ngIf="!existCopun" class="ui left pointing red basic label">
+                  Wrong coupon
+                </div>
+              </div>
+              <button class="apply-btn btn btn-primary btn-md" (click)="applyCoupon()">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="checkout">
+      <div class="total">
+        <div>
+          <div class="Subtotal">Sub-Total</div>
+          <div class="items">{{(quantityCartitems|async) + " items"}}</div>
+        </div>
+        <div class="total-amount">{{totalPrice$|async}}</div>
+      </div>
+      <div class="payment-buttons">
+        <button class="btn btn-primary btn-md" id="continue-button" routerLink="/cakes-catalog">Continue shopping</button>
+        <!-- link dont work -->
+        <a href="orderPage.html" title='Checkout'>
+          <button class="btn btn-primary btn-md">Checkout</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+  <title>חנות הקינוחים של הודיה</title>
+</head>
+
+<body>
+<app-nav-bar></app-nav-bar>
+<div id="hero">
+  <div class="container">
+
+    <div class="hero-content">
+      <h1 id="h1main">
+        cake shop
+      </h1>
+      <p>
+        Your treat is right here
+      </p>
+      <button id="myBtn" routerLink="/birthday-cakes">catalog</button>
+    </div>
+  </div>
+
+</div>
+
+<section id="home-experience">
+  <video id="video" autoplay muted loop playsinline width="51%">
+    <source src="../../../assets/img/123_Trim.mp4" type="video/mp4">
+    <div class="experience-content">
+      <h2>Our <span class="text-primary">Experience</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quos, tempore ex. Fugiat id neque enim!jfnbd
+      </p>
+
+    </div>
+  </video>
+</section>
+<section id="features">
+  <div class="box flag-left">
+    <i class="fas fa-seedling fa-4x"></i>
+    <h3>birthdays</h3>
+    <p>
+      A diverse selection of birthday cakes
+    </p>
+  </div>
+  <div class="box flag-middle">
+    <i class="fas fa-star fa-4x"></i>
+    <h3>Custom made cakes </h3>
+    <p>
+      A large selection of cakes and cookies for events
+    </p>
+  </div>
+  <div class="box flag-right">
+    <i class="fas fa-glass-cheers fa-4x"></i>
+    <h3>desserts</h3>
+    <p>
+      Amazing and especially delicious desserts
+    </p>
+  </div>
+</section>
+<script>
+  $('.dropdown').hover(function () {
+    $('.dropdown-menu', this).trigger('click');
+  });
+</script>
+
+</body>
