@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>חנות הקינוחים של הודיה</title>
+</head>
+
+<body>
+<app-nav-bar></app-nav-bar>
+<div class="cake-list-container">
+  <h2 class="text-center">birthday cakes</h2>
+  <hr class="bg-dark border-2 border-top border-dark">
+  <div class="row row-cols-1 row-cols-md-4 ">
+    <div class="col cards-column" *ngFor="let cake of cakes$|async">
+      <div class="card h-100">
+        <img src="{{cake.image}}" class="card-img-top" alt="../assets/img/cake-4034386.jpg">
+        <div class="card-body">
+          <h5 class="card-title">{{cake.name}}</h5>
+          <p class="card-text">{{cake.description}}</p>
+          <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
+        </div>
+        <div class="d-grid gap-2" *ngIf="!isincart(cake.name);else elseBlock">
+          <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button" (click)="addCake(cake)">add to cart</button>
+        </div>
+        <ng-template #elseBlock>
+          <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake.name)">remove from
+            cart
+          </button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('.dropdown').hover(function () {
+    $('.dropdown-menu', this).trigger('click');
+  });
+</script>
+
+</body>

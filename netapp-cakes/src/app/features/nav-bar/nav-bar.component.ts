@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CartService} from "../../core/services/cart.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
+  quantity: Observable<number>
 
-  constructor() { }
+  constructor(private cartService: CartService) {
+  }
 
   ngOnInit(): void {
+    this.quantity = this.cartService.productsQuantity$()
   }
 
 }

@@ -27,15 +27,14 @@ body {
 }
 
 a {
-
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: black;
 
 }
 
 #link-container {
-
+  color: black!important;
   margin: 20px 0;
 }
 
@@ -43,7 +42,7 @@ button {
 
   border: 0;
   border-radius: 20px;
-  background-color: #ffb3c0;
+  background-color: #1a3771;
   text-transform: uppercase;
   padding: 12px 45px;
   color: white;
