@@ -3,5 +3,6 @@ export interface Cake {
   description: string;
   price: number;
   image: string;
+  category: string;
   limit?: number;
 }

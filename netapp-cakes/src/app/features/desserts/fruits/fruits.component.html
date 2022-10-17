@@ -26,18 +26,19 @@
   <h2 class="text-center">Fruits</h2>
   <hr class="bg-dark border-2 border-top border-dark">
   <div class="row row-cols-1 row-cols-md-4 ">
-    <div class="col">
+    <div class="col" *ngFor="let cake of fruits|async">
       <div class="card h-100">
-        <img src="../../../../assets/img/Desserts/Fruits/1.png" class="card-img-top"
-             alt="../assets/img/Desserts/Fruits/1.png">
+        <img [src]="cake.image" class="card-img-top"
+             alt="../../../assets/img/Stripe cakes/1.png">
         <div class="card-body">
-          <h5 class="card-title">Fresh fruit tripe</h5>
-          <p class="card-text">A dessert of mascarpone cream, torte cake, berry coulis and fresh fruit in
-            a glass bowl. For 6-8 people</p>
-          <b class="dollar-icon"><i class=" bi bi-currency-dollar">189.00₪</i></b>
+          <h5 class="card-title">{{cake.name}}</h5>
+          <p class="card-text">{{cake.description}}</p>
+          <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
         </div>
         <div class="d-grid gap-2">
-          <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button">Add to cart</button>
+          <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button">Add to
+            cart
+          </button>
         </div>
       </div>
     </div>

@@ -38,4 +38,628 @@
     "price": 330.0,
     "image": "../assets/img/sweets-887722_960_720.jpg"
   }
+,
+  {
+    "name": "Saint Honore cake",
+    "description": "Puff pastry, puffs, muslin cream and vanilla whipped cream. Festive and delicate cake, diameter 16.",
+    "price": 109.00,
+    "image": "../assets/img/Cakes/Birthday cakes/1.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Chocolate and candy birthday cake",
+    "description": "Layers of chocolate torte, chocolate cream and chocolate coating and candies. A winning birthday cake",
+    "price": 260.00,
+    "image": "../assets/img/Cakes/Birthday cakes/2.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Chocolate and candy birthday cake",
+    "description": "Chocolate torte, chocolate cream and chocolate coating and candies. A small and winning cake. 12 diameter",
+    "price": 76.00,
+    "image": "../assets/img/Cakes/Birthday cakes/3.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Cheesecake and biscuit",
+    "description": "Biscuit layer cake that we make with cream cheese and vanilla. classics! 12 diameter.",
+    "price": 76.00,
+    "image": "../assets/img/Cakes/Birthday cakes/4.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Cherry mascarpone birthday cake",
+    "description": "Layers of almond torte, mascarpone and cherry coulis. Decorated with berries and white chocolate. celebration!",
+    "price": 260.00,
+    "image": "../assets/img/Cakes/Birthday cakes/5.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Cherry mascarpone birthday cake",
+    "description": "Almond torte, mascarpone and cherry coulis. Decorated with berries and white chocolate. celebration! 12 diameter",
+    "price": 76.00,
+    "image": "../assets/img/Cakes/Birthday cakes/6.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "A large Saint Honore cake",
+    "description": "Puff pastry, puffs, muslin cream and vanilla whipped cream. Festive and delicate cake, diameter 26",
+    "price": 164.00,
+    "image": "../assets/img/Cakes/Birthday cakes/7.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Vegan cheesecake",
+    "description": "Cheesecake with lemon zest and vanilla, crispy dough bottom with brown sugar and hazelnut flavors. 12 diameter",
+    "price": 76.00,
+    "image": "../assets/img/Cakes/Birthday cakes/8.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Cupiver Cheesecake",
+    "description": "Puff pastry, puffs, muslin cream and vanilla whipped cream. Festive and delicate cake, diameter 16.",
+    "price": 109.00,
+    "image": "../assets/img/Cakes/Birthday cakes/9.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Chocolate and Rona cake",
+    "description": "Rich chocolate cake with Valrona chocolate, coated with chocolate ganache. Diameter 18",
+    "price": 119.00,
+    "image": "../assets/img/Cakes/Birthday cakes/10.png",
+    "category": "birthdayCakes"
+  },
+  {
+    "name": "Apple strudel",
+    "description": "Filo pastry filled with caramelized apples",
+    "price": 58.00,
+    "image": "../assets/img/Cakes/Stripe cakes/1.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Becca nuts and cinnamon",
+    "description": "Yeast dough cake is filled with cinnamon, walnuts and hazelnuts",
+    "price": 58.00,
+    "image": "../assets/img/Cakes/Stripe cakes/2.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Poppy roulade",
+    "description": "Cold yeast dough cake filled with poppy seeds",
+    "price": 36.00,
+    "image": "../assets/img/Cakes/Stripe cakes/3.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Almond cream crunch and pears in wine",
+    "description": "Crunch with almond cream and pears cooked in red wine and spices",
+    "price": 48.00,
+    "image": "../assets/img/Cakes/Stripe cakes/4.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Cheese crunch",
+    "description": "Wrapped yeast dough filled with cheese and topped with streusel crumbs",
+    "price": 46.00,
+    "image": "../assets/img/Cakes/Stripe cakes/5.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Chocolate crunch",
+    "description": "Wrapped yeast dough filled with cocoa and chocolate spread and Rona Gros",
+    "price": 48.00,
+    "image": "../assets/img/Cakes/Stripe cakes/6.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Halva crunch",
+    "description": "Wrapped yeast dough filled with halva spread with dark chocolate crackling",
+    "price": 46.00,
+    "image": "../assets/img/Cakes/Stripe cakes/7.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Vegan chocolate yeast cake",
+    "description": "A small yeast cake filled with cocoa and chocolate spread and Rona Gros",
+    "price": 22.00,
+    "image": "../assets/img/Cakes/Stripe cakes/8.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Vegan walnut yeast cake",
+    "description": "A small yeast cake filled with cinnamon, walnuts and hazelnuts",
+    "price": 22.00,
+    "image": "../assets/img/Cakes/Stripe cakes/9.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Orange polenta cake",
+    "description": "With ground almonds and delicate flavors of olive oil",
+    "price": 46.00,
+    "image": "../assets/img/Cakes/Stripe cakes/10.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Silan cake, honey and nuts",
+    "description": "Bochusa cake with aromatic spices",
+    "price": 46.00,
+    "image": "../assets/img/Cakes/Stripe cakes/11.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Buchoshka chocolate",
+    "description": "Baked cake with cocoa and chocolate",
+    "price": 36.00,
+    "image": "../assets/img/Cakes/Stripe cakes/12.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Buchoshka marble",
+    "description": "A classic cake with chocolate and vanilla, perfect with coffee",
+    "price": 39.00,
+    "image": "../assets/img/Cakes/Stripe cakes/13.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Buchoshka lemon and olive oil",
+    "description": "Juicy chusha cake from lemons and olive oil with lemon glaze on top",
+    "price": 42.00,
+    "image": "../assets/img/Cakes/Stripe cakes/14.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Buchoshka carrot",
+    "description": "Chosha cake with carrots, walnuts and raisins",
+    "price": 39.00,
+    "image": "../assets/img/Pastrys/Stripe cakes/15.png",
+    "category": "stripeCakes"
+  },
+  {
+    "name": "Blueberry muffin",
+    "description": "A personal cake baked with tart blackberries",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/1.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "Orange muffin",
+    "description": "Personal orange cake with orange jam and streusel",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/2.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "A small chocolate muffin",
+    "description": "A personal cake baked with cocoa and dark chocolate",
+    "price": 8.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/3.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "Lemon pistachio muffin",
+    "description": "Personalized lemon cake, made of cashews and flax",
+    "price": 6.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/4.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "A small blueberry muffin",
+    "description": "A small personal cake, baked with tart blackberries",
+    "price": 5.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/5.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "Mini orange muffin",
+    "description": "A small baked orange cake",
+    "price": 5.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/6.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "Gluten-free apple muffin",
+    "description": "Personalized cake with Granny Smith apples, brown sugar and cinnamon",
+    "price": 9.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/7.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "Mini carrot muffin",
+    "description": "Personalized mini carrot cake with cinnamon and carrot",
+    "price": 5.00,
+    "image": "../assets/img/Pastrys/Muffin pastry/8.png",
+    "category": "muffinPastry"
+  },
+  {
+    "name": "Pan Suisse pastry",
+    "description": "Crisp pastry made from croissant dough, filled with rich pâtissier cream and milk chocolate",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/1.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Ban Scandinavian",
+    "description": "Scandinavian yeast pastry with cardamom and brown sugar",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/2.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Butter croissant",
+    "description": "Crispy French pastry of layers of yeast dough and butter",
+    "price": 12.00,
+    "image": "../assets/img/Pastrys/French pastries/3.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Chocolate croissant",
+    "description": "Crisp pastry of layers of yeast dough, butter and chocolate",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/4.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Almond croissant",
+    "description": "Crisp pastry of rich yeast dough filled with almond cream",
+    "price": 16.00,
+    "image": "../assets/img/Pastrys/French pastries/5.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Chosson pastry or Pomme",
+    "description": "Classic puff pastry, filled with apples and winter spices",
+    "price": 16.00,
+    "image": "../assets/img/Pastrys/French pastries/6.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Almond pistachio croissant",
+    "description": "Croissant dipped in yuzu syrup and filled with pistachio almond cream, topped with chopped roasted pistachios",
+    "price": 16.00,
+    "image": "../assets/img/Pastrys/French pastries/7.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Almond chocolate pastry",
+    "description": "Croissant dough, filled with almond-dark chocolate cream and vegan milk chocolate from Valerona",
+    "price": 16.00,
+    "image": "../assets/img/Pastrys/French pastries/8.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Cinnamon Danish",
+    "description": "Wrapped yeast dough pastry, filled with almond cream and cinnamon",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/9.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Danish maple and pecan",
+    "description": "Rich yeast dough pastry with pecans and maple",
+    "price": 16.00,
+    "image": "../assets/img/Pastrys/French pastries/10.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Danish Halva",
+    "description": "Wrapped yeast dough pastry, filled with halva and chocolate spread",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/11.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Chocolate Danish",
+    "description": "Wrapped yeast dough pastry, filled with chocolate",
+    "price": 16.00,
+    "image": "../assets/img/Pastrys/French pastries/12.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Poppy yeast pastry",
+    "description": "Yeast dough pastry rich in butter and filled with poppy seeds",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/13.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Ricotta and blueberry pastry",
+    "description": "Wrapped yeast dough pastry, filled with sweet ricotta cheese, citrus, vanilla and blueberries",
+    "price": 14.00,
+    "image": "../assets/img/Pastrys/French pastries/14.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Raisin Danish",
+    "description": "Yeast pastry involves filling with pastry cream and raisins in rum",
+    "price": 14.00,
+    "image": "../assets/img/Cakes/French pastries/15.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Nochola pastry",
+    "description": "Croissant dough pastry filled with hazelnut and almond spread with chocolate chips and roasted almonds",
+    "price": 16.00,
+    "image": "../assets/img/Cakes/French pastries/16.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Butter brioche",
+    "description": "Yeast dough pastry rich in butter",
+    "price": 12.00,
+    "image": "../assets/img/Cakes/French pastries/17.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Rogelach nuts",
+    "description": "Yeast dough filled with hazelnuts and praline",
+    "price": 6.00,
+    "image": "../assets/img/Cakes/French pastries/18.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Rogelach chocolate",
+    "description": "Yeast dough filled with quality chocolate",
+    "price": 6.00,
+    "image": "../assets/img/Cakes/French pastries/19.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Rugalach nut case",
+    "description": "Yeast dough filled with hazelnuts and praline",
+    "price": 30.00,
+    "image": "../assets/img/Cakes/French pastries/20.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Roglach chocolate case",
+    "description": "Yeast dough filled with quality chocolate",
+    "price": 30.00,
+    "image": "../assets/img/Cakes/French pastries/21.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Kevin Aman",
+    "description": "Layers of croissant dough caramelized with sugar and butter",
+    "price": 8.00,
+    "image": "../assets/img/Cakes/French pastries/22.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Queen Aman case",
+    "description": "Layers of croissant dough caramelized with sugar and butter",
+    "price": 16.00,
+    "image": "../assets/img/Cakes/French pastries/23.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Pastel de nata",
+    "description": "Portuguese puff pastry with baked pastry cream",
+    "price": 8.00,
+    "image": "../assets/img/Cakes/French pastries/24.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Pastel de nata case",
+    "description": "A famous Portuguese pastry made of puff pastry filled with baked pastry cream.",
+    "price": 16.00,
+    "image": "../assets/img/Cakes/French pastries/25.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Canal de Bordeaux",
+    "description": "anilla and rum pastry from the Bordeaux region of France, soft and light on the inside and hard and dark on the outside",
+    "price": 8.00,
+    "image": "../assets/img/Cakes/French pastries/26.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Mini Canale de Bordeaux",
+    "description": "Personal vanilla and rum pastry from the Bordeaux region of France, soft and light on the inside and hard and dark on the outside",
+    "price": 4.00,
+    "image": "../assets/img/Cakes/French pastries/27.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Canela de Bordeaux mini case",
+    "description": "Personal vanilla and rum pastry from the Bordeaux region of France, soft and light on the inside and hard and dark on the outside",
+    "price": 20.00,
+    "image": "../assets/img/Cakes/French pastries/28.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Scones",
+    "description": "Personal English pastry with raisins and caraway",
+    "price": 12.00,
+    "image": "../assets/img/Cakes/French pastries/29.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Mini ricotta and blueberry pastry",
+    "description": "Wrapped yeast dough pastry, filled with sweet ricotta cheese, citrus, vanilla and blueberries",
+    "price": 5.00,
+    "image": "../assets/img/Cakes/French pastries/30.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Mini cinnamon danish",
+    "description": "Wrapped yeast dough pastry, filled with almond cream and cinnamon",
+    "price": 4.00,
+    "image": "../assets/img/Cakes/French pastries/31.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Blueberry ricotta mini pastry case",
+    "description": "Wrapped yeast dough pastry, filled with sweet ricotta cheese, citrus, vanilla and blueberries",
+    "price": 20.00,
+    "image": "../assets/img/Cakes/French pastries/32.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Mini butter croissant case",
+    "description": "Crispy French pastry of layers of yeast dough and butter<",
+    "price": 20.00,
+    "image": "../assets/img/Cakes/French pastries/33.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Mini chocolate croissant box",
+    "description": "Yeast dough rich in butter filled with quality chocolate",
+    "price": 25.00,
+    "image": "../assets/img/Cakes/French pastries/34.png",
+    "category": "frenchPastries"
+  },
+  {
+    "name": "Strawberry jam heart cookies",
+    "description": "Round cookies with the shape of a heart with strawberry flavor",
+    "price": 34.00,
+    "image": "../assets/img/Cookies/Special cookies/1.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Granola cookies",
+    "description": "Granola cookies with oat flour, chocolate chips, coconut, pecans and cranberries",
+    "price": 32.00,
+    "image": "../assets/img/Cookies/Special cookies/2.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Elephant ear cookies",
+    "description": "Small sugared and crispy puff pastry cookies that you won't want to stop eating",
+    "price": 34.00,
+    "image": "../assets/img/Cookies/Special cookies/3.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Cantuccini cookies",
+    "description": "Crunchy cookies with dried fruits and nuts plus chocolate and orange",
+    "price": 36.00,
+    "image": "../assets/img/Cookies/Special cookies/4.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Butter cookies",
+    "description": "Crispy butter cookies with vanilla",
+    "price": 28.00,
+    "image": "../assets/img/Cookies/Special cookies/5.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Lemon and poppy seed cookies",
+    "description": "Crispy butter cookies with poppy seeds and lemon",
+    "price": 32.00,
+    "image": "../assets/img/Cookies/Special cookies/6.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Florentine cookies",
+    "description": "Crispy dough cookies with grated orange, caramel and flaked almonds",
+    "price": 32.00,
+    "image": "../assets/img/Cookies/Special cookies/7.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Chocolate fudge cookies",
+    "description": "Rich milk and dark chocolate cookies, without flour, the children will fly in the air",
+    "price": 36.00,
+    "image": "../assets/img/Cookies/Special cookies/8.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Six macarons",
+    "description": "Delicate and crunchy cookies based on almonds",
+    "price": 36.00,
+    "image": "../assets/img/Cookies/Special cookies/9.png",
+    "category": "specialCookies"
+  },
+  {
+    "name": "Gluten-free chocolate chip cookies",
+    "description": "Made of gluten-free flour, butter and milk chocolate chips",
+    "price": 32.00,
+    "image": "../assets/img/Cookies/Chocolate chip cookies/1.png",
+    "category": "chocolateChipCookies"
+  },
+  {
+    "name": "Raspberry white chocolate chip cookies",
+    "description": "Made of gluten-free flour, butter and pieces of raspberry chocolate and white chocolate",
+    "price": 36.00,
+    "image": "../assets/img/Cookies/Chocolate chip cookies/2.png",
+    "category": "chocolateChipCookies"
+  },
+  {
+    "name": "Chocolate chip cookie",
+    "description": "American style cookie made from crispy dough, brown sugar and chocolate chips",
+    "price": 10.00,
+    "image": "../assets/img/Cookies/Chocolate chip cookies/3.png",
+    "category": "chocolateChipCookies"
+  },
+  {
+    "name": "Praline mousse cake",
+    "description": "Praline mousse, coffee chocolate and financier vanilla, coated with chocolate ganache with crackles on the bottom. Diameter 14",
+    "price": 108.00,
+    "image": "../assets/img/Desserts/Chocolate mousse/1.png",
+    "category": "chocolateMousse"
+  },
+  {
+    "name": "Chocolate mousse",
+    "description": "Made of Valorana chocolate with vanilla whipped cream, comes in a festive glass cup, suitable for 8-10 diners",
+    "price": 159.00,
+    "image": "../assets/img/Desserts/Chocolate mousse/2.png",
+    "category": "chocolateMousse"
+  },
+  {
+    "name": "Whiskey chocolate tart",
+    "description": "Layers of crispy dough with whole hazelnuts, toffee and chocolate whiskey ganache. 17 square dessert",
+    "price": 110.00,
+    "image": "../assets/img/Desserts/Chocolate mousse/3.png",
+    "category": "chocolateMousse"
+  },
+  {
+    "name": "Chocolate and coconut cake",
+    "description": "Three layers of coconut torte, chocolate torte and chocolate ganache",
+    "price": 68.00,
+    "image": "../assets/img/Desserts/Chocolate mousse/4.png",
+    "category": "chocolateMousse"
+  },
+  {
+    "name": "Fresh fruit tripe",
+    "description": "A dessert of mascarpone cream, torte cake, berry coulis and fresh fruit in a glass bowl. For 6-8 people",
+    "price": 189.00,
+    "image": "../assets/img/Desserts/Fruits/1.png",
+    "category": "fruits"
+  },
+  {
+    "name": "Rice pudding",
+    "description": "Rice cooked in coconut milk and vanilla, with fresh fruit",
+    "price": 168.00,
+    "image": "../assets/img/Desserts/Fruits/2.png",
+    "category": "fruits"
+  },
+  {
+    "name": "Fresh fruit tart",
+    "description": "Crispy dough with muslin cream and fresh fruit. Diameter 18",
+    "price": 98.00,
+    "image": "../assets/img/Desserts/Fruits/3.png",
+    "category": "fruits"
+  },
+  {
+    "name": "Triple mascarpone and fruit in a glass",
+    "description": "A personal dessert of lemon mascarpone cream, torte cake layer, sour berry coulis and fresh fruit",
+    "price": 24.00,
+    "image": "../assets/img/Desserts/Fruits/4.png",
+    "category": "fruits"
+  },
+  {
+    "name": "Rice pudding in a glass",
+    "description": "A personal dessert of rice cooked in coconut milk and vanilla, with fresh fruit",
+    "price": 24.00,
+    "image": "../assets/img/Desserts/Fruits/5.png",
+    "category": "fruits"
+  },
+  {
+    "name": "Fruit tartlet - 2 units",
+    "description": "Crispy dough tartlet filled with mousseline cream and fresh fruit",
+    "price": 32.00,
+    "image": "../assets/img/Desserts/Fruits/6.png",
+    "category": "fruits"
+  }
 ]

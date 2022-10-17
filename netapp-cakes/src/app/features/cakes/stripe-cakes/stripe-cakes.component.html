@@ -28,14 +28,14 @@
 <ul id="menu">
   <div class="cake-list-container">
     <div class="row row-cols-1 row-cols-md-4">
-      <div class="col">
+      <div class="col" *ngFor="let cake of stripeCakes|async">
         <div class="card h-100">
-          <img src="../../../../assets/img/Stripe%20cakes/1.png" class="card-img-top"
+          <img [src]="cake.image" class="card-img-top"
                alt="../../../assets/img/Stripe cakes/1.png">
           <div class="card-body">
-            <h5 class="card-title">Apple strudel</h5>
-            <p class="card-text">Filo pastry filled with caramelized apples</p>
-            <b class="dollar-icon"><i class=" bi bi-currency-dollar">58.00₪</i></b>
+            <h5 class="card-title">{{cake.name}}</h5>
+            <p class="card-text">{{cake.description}}</p>
+            <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
           </div>
           <div class="d-grid gap-2">
             <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button">Add to
