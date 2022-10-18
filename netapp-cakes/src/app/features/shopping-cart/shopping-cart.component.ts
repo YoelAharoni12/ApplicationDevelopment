@@ -54,7 +54,6 @@ export class ShoppingCartComponent implements OnInit {
   existCoupun() {
     // @ts-ignore
     const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
-    console.log(!!Object.keys(this.coupunList).find(x => x === couponValue))
     return !!Object.keys(this.coupunList).find(x => x === couponValue)
   }
 
@@ -63,12 +62,13 @@ export class ShoppingCartComponent implements OnInit {
     const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
     const priceOff = Object.keys(this.coupunList).find(x => x === couponValue)
     this.existCopun = !!Object.keys(this.coupunList).find(x => x === couponValue)
+
     this.totalPrice$ = this.totalPrice$.pipe(map((totalPrice) => {
       if (totalPrice === 0) {
         return 0
       }
       // @ts-ignore
-      return this.existCopun ? totalPrice - this.coupunList[priceOff] : 0;
+      return this.existCopun ? totalPrice - this.coupunList[priceOff] : totalPrice;
     }))
 
   }

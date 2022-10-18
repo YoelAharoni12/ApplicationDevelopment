@@ -372,140 +372,140 @@
     "name": "Raisin Danish",
     "description": "Yeast pastry involves filling with pastry cream and raisins in rum",
     "price": 14.00,
-    "image": "../assets/img/Cakes/French pastries/15.png",
+    "image": "../assets/img/Pastrys/French pastries/15.png",
     "category": "frenchPastries"
   },
   {
     "name": "Nochola pastry",
     "description": "Croissant dough pastry filled with hazelnut and almond spread with chocolate chips and roasted almonds",
     "price": 16.00,
-    "image": "../assets/img/Cakes/French pastries/16.png",
+    "image": "../assets/img/Pastrys/French pastries/16.png",
     "category": "frenchPastries"
   },
   {
     "name": "Butter brioche",
     "description": "Yeast dough pastry rich in butter",
     "price": 12.00,
-    "image": "../assets/img/Cakes/French pastries/17.png",
+    "image": "../assets/img/Pastrys/French pastries/17.png",
     "category": "frenchPastries"
   },
   {
     "name": "Rogelach nuts",
     "description": "Yeast dough filled with hazelnuts and praline",
     "price": 6.00,
-    "image": "../assets/img/Cakes/French pastries/18.png",
+    "image": "../assets/img/Pastrys/French pastries/18.png",
     "category": "frenchPastries"
   },
   {
     "name": "Rogelach chocolate",
     "description": "Yeast dough filled with quality chocolate",
     "price": 6.00,
-    "image": "../assets/img/Cakes/French pastries/19.png",
+    "image": "../assets/img/Pastrys/French pastries/19.png",
     "category": "frenchPastries"
   },
   {
     "name": "Rugalach nut case",
     "description": "Yeast dough filled with hazelnuts and praline",
     "price": 30.00,
-    "image": "../assets/img/Cakes/French pastries/20.png",
+    "image": "../assets/img/Pastrys/French pastries/20.png",
     "category": "frenchPastries"
   },
   {
     "name": "Roglach chocolate case",
     "description": "Yeast dough filled with quality chocolate",
     "price": 30.00,
-    "image": "../assets/img/Cakes/French pastries/21.png",
+    "image": "../assets/img/Pastrys/French pastries/21.png",
     "category": "frenchPastries"
   },
   {
     "name": "Kevin Aman",
     "description": "Layers of croissant dough caramelized with sugar and butter",
     "price": 8.00,
-    "image": "../assets/img/Cakes/French pastries/22.png",
+    "image": "../assets/img/Pastrys/French pastries/22.png",
     "category": "frenchPastries"
   },
   {
     "name": "Queen Aman case",
     "description": "Layers of croissant dough caramelized with sugar and butter",
     "price": 16.00,
-    "image": "../assets/img/Cakes/French pastries/23.png",
+    "image": "../assets/img/Pastrys/French pastries/23.png",
     "category": "frenchPastries"
   },
   {
     "name": "Pastel de nata",
     "description": "Portuguese puff pastry with baked pastry cream",
     "price": 8.00,
-    "image": "../assets/img/Cakes/French pastries/24.png",
+    "image": "../assets/img/Pastrys/French pastries/24.png",
     "category": "frenchPastries"
   },
   {
     "name": "Pastel de nata case",
     "description": "A famous Portuguese pastry made of puff pastry filled with baked pastry cream.",
     "price": 16.00,
-    "image": "../assets/img/Cakes/French pastries/25.png",
+    "image": "../assets/img/Pastrys/French pastries/25.png",
     "category": "frenchPastries"
   },
   {
     "name": "Canal de Bordeaux",
     "description": "anilla and rum pastry from the Bordeaux region of France, soft and light on the inside and hard and dark on the outside",
     "price": 8.00,
-    "image": "../assets/img/Cakes/French pastries/26.png",
+    "image": "../assets/img/Pastrys/French pastries/26.png",
     "category": "frenchPastries"
   },
   {
     "name": "Mini Canale de Bordeaux",
     "description": "Personal vanilla and rum pastry from the Bordeaux region of France, soft and light on the inside and hard and dark on the outside",
     "price": 4.00,
-    "image": "../assets/img/Cakes/French pastries/27.png",
+    "image": "../assets/img/Pastrys/French pastries/27.png",
     "category": "frenchPastries"
   },
   {
     "name": "Canela de Bordeaux mini case",
     "description": "Personal vanilla and rum pastry from the Bordeaux region of France, soft and light on the inside and hard and dark on the outside",
     "price": 20.00,
-    "image": "../assets/img/Cakes/French pastries/28.png",
+    "image": "../assets/img/Pastrys/French pastries/28.png",
     "category": "frenchPastries"
   },
   {
     "name": "Scones",
     "description": "Personal English pastry with raisins and caraway",
     "price": 12.00,
-    "image": "../assets/img/Cakes/French pastries/29.png",
+    "image": "../assets/img/Pastrys/French pastries/29.png",
     "category": "frenchPastries"
   },
   {
     "name": "Mini ricotta and blueberry pastry",
     "description": "Wrapped yeast dough pastry, filled with sweet ricotta cheese, citrus, vanilla and blueberries",
     "price": 5.00,
-    "image": "../assets/img/Cakes/French pastries/30.png",
+    "image": "../assets/img/Pastrys/French pastries/30.png",
     "category": "frenchPastries"
   },
   {
     "name": "Mini cinnamon danish",
     "description": "Wrapped yeast dough pastry, filled with almond cream and cinnamon",
     "price": 4.00,
-    "image": "../assets/img/Cakes/French pastries/31.png",
+    "image": "../assets/img/Pastrys/French pastries/31.png",
     "category": "frenchPastries"
   },
   {
     "name": "Blueberry ricotta mini pastry case",
     "description": "Wrapped yeast dough pastry, filled with sweet ricotta cheese, citrus, vanilla and blueberries",
     "price": 20.00,
-    "image": "../assets/img/Cakes/French pastries/32.png",
+    "image": "../assets/img/Pastrys/French pastries/32.png",
     "category": "frenchPastries"
   },
   {
     "name": "Mini butter croissant case",
     "description": "Crispy French pastry of layers of yeast dough and butter<",
     "price": 20.00,
-    "image": "../assets/img/Cakes/French pastries/33.png",
+    "image": "../assets/img/Pastrys/French pastries/33.png",
     "category": "frenchPastries"
   },
   {
     "name": "Mini chocolate croissant box",
     "description": "Yeast dough rich in butter filled with quality chocolate",
     "price": 25.00,
-    "image": "../assets/img/Cakes/French pastries/34.png",
+    "image": "../assets/img/Pastrys/French pastries/34.png",
     "category": "frenchPastries"
   },
   {
