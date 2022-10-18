@@ -82,3 +82,14 @@
 .fa-instagram {
   color: black;
 }
+
+.figure {
+  width: 100%;
+}
+
+.figure-img {
+  width: 100%;
+}
+.navbar-nav{
+  justify-content: center;
+}

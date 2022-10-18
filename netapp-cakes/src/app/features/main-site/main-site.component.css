@@ -1,3 +1,97 @@
+/*navbar*/
+.cake-list-container {
+  padding: 4% !important;
+}
+
+.header-navbar {
+  background: #1a3771 !important;
+}
+
+.dollar-icon {
+  float: left;
+}
+
+.nav-item.active {
+  color: rgb(224, 120, 172);
+}
+
+.bg-primary {
+  color: white;
+}
+
+.nav-link.active,
+.MainButton:hover {
+  color: rgb(248, 169, 242) !important;
+}
+
+#InternalNavbar {
+  height: 100px;
+}
+
+.main_nav {
+  justify-content: center;
+}
+
+.logo-cake {
+  text-align: right;
+  margin: 0 !important;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.left-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+.add-to-cart {
+  background: #1a3771;
+}
+
+.symbol {
+  width: 130px;
+  height: 80px;
+  float: right;
+}
+
+.checkSymbol {
+  margin-left: auto;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  color: black;
+}
+
+.figure {
+  width: 100%;
+}
+
+.figure-img {
+  width: 100%;
+}
+
 .nav-item.active {
   color: rgb(224, 120, 172);
 }
@@ -13,6 +107,7 @@
 
 #InternalNavbar {
   height: 100px;
+  color: #222;
 }
 
 #main_nav {
@@ -33,7 +128,6 @@
 .content {
   position: fixed;
   bottom: 0;
-  /*position: senter;*/
   color: #f1f1f1;
 
   padding-bottom: 30%;
@@ -93,10 +187,16 @@
 
 
 #home-experience {
+  width: 100%;
   height: 400px;
   border: 3px solid #222;
   float: left;
+  background-color: #222;
 
+
+}
+#divVideo{
+  width: 50%;
 
 }
 #home-experience .experience-content {
@@ -105,12 +205,19 @@
   height: 100%;
   text-align: center;
   color: #222;
-  border-left: 3px solid #222;
-}
+  margin-top: 5%;
 
-#home-experience .experience-content p {
-  padding: 30px 0;
-  color: black;
+}
+#video{
+  float: left;
+  width: 75%;
+  margin-top: 5%;
+
+}
+#home-experience .experience-content h3,h2 {
+  margin-top: 2%;
+  color: white;
+  width: 75%;
 }
 /* Features */
 
@@ -132,69 +239,13 @@
 }
 
 .flag-middle {
-  background: #f4f5f0;
+  background: #ffb6c1;
 }
 
 .flag-right {
-  background: blue;
+  background: #ffb6c1;
   color: #fff;
 }
-
-
-.cake-list-container {
-  padding: 4% !important;
-}
-.header-navbar{
-  background: #1a3771!important;
-}
-.dollar-icon {
-  float: left;
-}
-
-.nav-item.active {
-  color: rgb(224, 120, 172);
-}
-
-.bg-primary {
-  color: white;
-}
-
-.nav-link.active,
-.MainButton:hover {
-  color: rgb(255, 0, 0) !important;
-}
-
-#InternalNavbar {
-  height: 100px;
-}
-
-.main_nav {
+.navbar-nav{
   justify-content: center;
-}
-
-.logo-cake {
-  text-align: right;
-  margin: 0 !important;
-}
-
-.nav-item {
-  margin-left: 40px;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
-.left-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  padding: 0;
-  margin: 0 0 0 10px;
-}
-.symbol {
-  width: 130px;
-  height: 80px;
-  float: right;
 }
