@@ -7,19 +7,31 @@ body {
 
   background-color: #777;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 60px;
+  background-image: url("src/assets/img/sign-in.jpg");
+
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
 
 #container {
 
   background-color: #fff;
-  border-radius: 10px;
-  border-radius: 3%;
+  border-radius: 20px;
   width: 320px;
-  height: 480px;
-  margin: auto;
+  height: 450px;
   text-align: center;
   padding: 20px 40px;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
 
 
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -34,7 +46,7 @@ a {
 }
 
 #link-container {
-  color: black!important;
+  color: black !important;
   margin: 20px 0;
 }
 
@@ -47,6 +59,7 @@ button {
   padding: 12px 45px;
   color: white;
   letter-spacing: 1px;
+
   font-weight: bold;
 
 

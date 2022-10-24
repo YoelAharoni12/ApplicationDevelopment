@@ -26,11 +26,11 @@ export class SpecialCookiesComponent implements OnInit {
     this.cartService.addProduct(cake)
   }
 
-  removeCake(cakeName: string) {
-    this.cartService.removeProduct(cakeName)
+  removeCake(cakeId: string) {
+    this.cartService.removeProduct(cakeId)
   }
 
-  isincart(cakeName: string) {
-    return !!this.cartService.cart$.getValue()[cakeName]
+  isincart(cakeId: string) {
+    return !!this.cartService.cart$.getValue()[cakeId]
   }
 }

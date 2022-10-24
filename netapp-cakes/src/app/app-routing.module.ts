@@ -11,6 +11,7 @@ import {SpecialCookiesComponent} from "./features/cookies/special-cookies/specia
 import {ChocolateChipsComponent} from "./features/cookies/chocolate-chips/chocolate-chips.component";
 import {ChocolateMousseComponent} from "./features/desserts/chocolate-mousse/chocolate-mousse.component";
 import {FruitsComponent} from "./features/desserts/fruits/fruits.component";
+import {AddProductComponent} from "./features/add-product/add-product.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'sign-in', pathMatch: 'full'},
@@ -24,9 +25,8 @@ const routes: Routes = [
   {path: 'specialCookies', component: SpecialCookiesComponent},
   {path: 'chocolateChips', component: ChocolateChipsComponent},
   {path: 'chocolateMousse', component: ChocolateMousseComponent},
-  {path: 'fruits', component: FruitsComponent}
-
-
+  {path: 'fruits', component: FruitsComponent},
+  {path: 'addProduct', component: AddProductComponent}
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {map, Observable} from 'rxjs';
+import {Observable} from 'rxjs';
 
 import {Cake} from "../../shared/models/cake";
 import {environment} from "../../../environments/environment";
@@ -11,10 +11,15 @@ export class CakeService {
 
   constructor(private http: HttpClient) {
   }
-
+  // http://localhost:4000/products
   getProducts$(): Observable<Cake[]> {
     return this.http.get<Cake[]>(
-      `${environment.productsUrl}/${this.productsUri}`
+      `http://localhost:4000/products`
     );
+  }
+
+  addCake(cake: Cake) {
+    console.log(cake)
+     this.http.post(`http://localhost:4000/products`, cake).subscribe(console.log)
   }
 }

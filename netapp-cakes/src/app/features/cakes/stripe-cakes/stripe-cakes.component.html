@@ -30,18 +30,22 @@
     <div class="row row-cols-1 row-cols-md-4">
       <div class="col" *ngFor="let cake of stripeCakes|async">
         <div class="card h-100">
-          <img [src]="cake.image" class="card-img-top"
-               alt="../../../assets/img/Stripe cakes/1.png">
+          <img src="{{cake.image}}" class="card-img-top" alt="../assets/img/cake-4034386.jpg">
           <div class="card-body">
             <h5 class="card-title">{{cake.name}}</h5>
             <p class="card-text">{{cake.description}}</p>
             <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
           </div>
-          <div class="d-grid gap-2">
-            <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button">Add to
+          <div class="d-grid gap-2" *ngIf="!isincart(cake._id);else elseBlock">
+            <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button" (click)="addCake(cake)">add to
               cart
             </button>
           </div>
+          <ng-template #elseBlock>
+            <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake._id)">remove from
+              cart
+            </button>
+          </ng-template>
         </div>
       </div>
     </div>
@@ -51,66 +55,6 @@
   $('.dropdown').hover(function () {
     $('.dropdown-menu', this).trigger('click');
   });
-
-  function filterSelection() {
-    var x, i;
-    input = document.getElementById("searchButton");
-    x = document.getElementsByTagName("div");
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(input) > -1) w3AddClass(x[i], "show");
-    }
-  }
-
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
-    }
-  }
-
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-  var btnContainer = document.getElementById("searchButton");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-
-  function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("searchButton");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("menu");
-    li = ul.getElementsByTagName("div");
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("h5")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
-      }
-    }
-  }
 </script>
 
 </body>
