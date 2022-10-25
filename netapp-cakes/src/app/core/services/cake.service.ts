@@ -14,7 +14,7 @@ export class CakeService {
 
   getProducts$(): Observable<Cake[]> {
     return this.http.get<Cake[]>(
-      `${(environment as any)}/${this.productsUri}`
+      `${(environment as any).productsUrl}/${this.productsUri}`
     );
   }
 }
