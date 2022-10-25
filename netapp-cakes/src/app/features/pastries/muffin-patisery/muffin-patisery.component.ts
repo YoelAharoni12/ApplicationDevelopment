@@ -26,7 +26,7 @@ export class MuffinPatiseryComponent implements OnInit {
     this.cartService.addProduct(cake)
   }
 
-  removeCake(cakeId: string) {
+  removeCake(cakeId:any) {
     this.cartService.removeProduct(cakeId)
   }
 

@@ -122,19 +122,6 @@
 .nav-item {
   margin-left: 40px;
 }
-
-
-
-.content {
-  position: fixed;
-  bottom: 0;
-  color: #f1f1f1;
-
-  padding-bottom: 30%;
-  background: url('../../../assets/img/hero.jpg') no-repeat center 35% / cover;
-  height: 600px;
-}
-
 #myBtn {
   width: 100px;
   font-size: 18px;

@@ -11,10 +11,9 @@ export class CakeService {
 
   constructor(private http: HttpClient) {
   }
-  // http://localhost:4000/products
   getProducts$(): Observable<Cake[]> {
     return this.http.get<Cake[]>(
-      `http://localhost:4000/products`
+      `${environment.productsUrl}/${this.productsUri}`
     );
   }
 

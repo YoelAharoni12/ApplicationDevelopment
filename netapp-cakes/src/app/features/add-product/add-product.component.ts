@@ -9,7 +9,7 @@ import {Observable, ReplaySubject} from "rxjs";
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent {
-  cakeToAdd: Cake = {_id: '', image: '', description: '', price: 0, name: '', category: ''}
+  cakeToAdd: Cake = { image: '', description: '', price: 0, name: '', category: ''}
   cakesCategory: string[] = ['birthdayCakes', 'stripeCakes', 'specialCookies', 'chocolateMousse', 'fruits', 'chocolateChipCookies', 'frenchPastries', 'muffinPastry']
   base64Output: string;
 

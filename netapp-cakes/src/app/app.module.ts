@@ -19,6 +19,7 @@ import { ChocolateChipsComponent } from './features/cookies/chocolate-chips/choc
 import { ChocolateMousseComponent } from './features/desserts/chocolate-mousse/chocolate-mousse.component';
 import { FruitsComponent } from './features/desserts/fruits/fruits.component';
 import { AddProductComponent } from './features/add-product/add-product.component';
+import { RemoveProductComponent } from './features/remove-product/remove-product.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AddProductComponent } from './features/add-product/add-product.componen
     ChocolateChipsComponent,
     ChocolateMousseComponent,
     FruitsComponent,
-    AddProductComponent
+    AddProductComponent,
+    RemoveProductComponent
   ],
   imports: [
     BrowserModule,
