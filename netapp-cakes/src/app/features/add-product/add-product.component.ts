@@ -9,7 +9,7 @@ import {Observable, ReplaySubject} from "rxjs";
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent {
-  cakeToAdd: Cake = { image: '', description: '', price: 0, name: '', category: ''}
+  cakeToAdd: Cake = {_id: "", category: "", description: "", image: "", name: "", price: 0};
   cakesCategory: string[] = ['birthdayCakes', 'stripeCakes', 'specialCookies', 'chocolateMousse', 'fruits', 'chocolateChipCookies', 'frenchPastries', 'muffinPastry']
   base64Output: string;
 
@@ -34,7 +34,7 @@ export class AddProductComponent {
 
   onSubmit() {
     this.cakeToAdd.image = 'data:image/jpg;base64,' + this.base64Output
-    console.log("aa")
+    console.log(this.cakeToAdd)
     this.cakeService.addCake(this.cakeToAdd)
 
   }

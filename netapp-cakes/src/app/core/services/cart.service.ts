@@ -11,7 +11,7 @@ export class CartService {
 
   addProduct(cakeToAdd: Cake) {
     let cart = {...this.cart$.value};
-    cart[cakeToAdd.name] = {cake: cakeToAdd, amount: 1};
+    cart[cakeToAdd._id] = {cake: cakeToAdd, amount: 1};
     this.cart$.next(cart);
   }
 

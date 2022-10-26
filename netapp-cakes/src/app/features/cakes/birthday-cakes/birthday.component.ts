@@ -20,6 +20,7 @@ export class BirthdayComponent implements OnInit {
   ngOnInit(): void {
     this.quantity = this.cartService.productsQuantity$()
     this.cakes$ = this.cakeService.getProducts$().pipe(map((cakes) => cakes.filter(cake => cake.category === 'birthdayCakes')))
+    this.cakeService.getProducts$().pipe(map((cakes) => cakes.filter(cake => cake.category === 'birthdayCakes'))).subscribe(console.log)
   }
 
   addCake(cake: Cake) {
@@ -31,6 +32,7 @@ export class BirthdayComponent implements OnInit {
   }
 
   isincart(cakeId: string) {
+    console.log(this.cartService.cart$.getValue())
     return !!this.cartService.cart$.getValue()[cakeId]
   }
 }

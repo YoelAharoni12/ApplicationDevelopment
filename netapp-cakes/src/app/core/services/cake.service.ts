@@ -13,7 +13,7 @@ export class CakeService {
   }
   getProducts$(): Observable<Cake[]> {
     return this.http.get<Cake[]>(
-      `${(environment as any)}/${this.productsUri}`
+      `http://localhost:4000/products`
     );
   }
 
