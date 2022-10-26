@@ -127,7 +127,7 @@
   font-size: 18px;
   padding: 10px;
   border: none;
-  background:blue;
+  background: blue;
   color: #fff;
   border-radius: 25px;
   align-items: center;
@@ -142,11 +142,13 @@
 
 
 }
-#h1main{
+
+#h1main {
   text-align: center;
   color: #ffb6c1;
 }
-#p-main{
+
+#p-main {
   text-align: center;
   color: black;
 }
@@ -162,6 +164,7 @@
   text-align: center;
   padding-top: 170px;
 }
+
 #hero .hero-content h1 {
   font-size: 60px;
   line-height: 120%;
@@ -182,10 +185,14 @@
 
 
 }
-#divVideo{
-  width: 50%;
+
+#divVideo {
+  width: 40%;
+  padding-left: 5%;
+  padding-top: 1%;
 
 }
+
 #home-experience .experience-content {
   float: right;
   width: 50%;
@@ -195,17 +202,21 @@
   margin-top: 5%;
 
 }
-#video{
+
+#video {
   float: left;
   width: 75%;
   margin-top: 5%;
 
 }
-#home-experience .experience-content h3,h2 {
+
+#home-experience .experience-content h3,
+h2 {
   margin-top: 2%;
   color: white;
   width: 75%;
 }
+
 /* Features */
 
 .box {
@@ -227,12 +238,19 @@
 
 .flag-middle {
   background: #ffb6c1;
+  color: #fff;
+
 }
 
 .flag-right {
   background: #ffb6c1;
   color: #fff;
 }
-.navbar-nav{
+
+.navbar-nav {
   justify-content: center;
+}
+
+#futer {
+  color: transparent;
 }
