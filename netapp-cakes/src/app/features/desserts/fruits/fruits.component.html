@@ -33,7 +33,7 @@
       <div class="card h-100">
         <img src="{{cake.image}}" class="card-img-top" alt="../assets/img/cake-4034386.jpg">
         <div class="card-body">
-          <h5 class="card-title">{{cake.name}}</h5>
+          <h5 class="card-title">{{cake._id}}</h5>
           <p class="card-text">{{cake.description}}</p>
           <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
         </div>
@@ -43,7 +43,7 @@
           </button>
         </div>
         <ng-template #elseBlock>
-          <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake.name)">remove from
+          <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake._id)">remove from
             cart
           </button>
         </ng-template>

@@ -30,6 +30,7 @@ export class ShoppingCartComponent implements OnInit {
     this.cartService.getCart$().subscribe(data => this.cartItems = data)
     this.quantityCartitems = this.cartService.productsQuantity$()
     this.totalPrice$ = this.cartService.totalPrice$()
+    this.cartService.totalPrice$().subscribe(console.log)
   }
 
   removeProduct(cakeName: string) {
@@ -41,14 +42,14 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   addamount(cartItem: { cake: Cake; amount: number }) {
-    this.cartService.updateProductAmount(cartItem.cake.name, ++cartItem.amount)
+    this.cartService.updateProductAmount(cartItem.cake._id, ++cartItem.amount)
   }
 
   decreaseAmount(cartItem: { cake: Cake; amount: number }) {
     if (cartItem.amount === 0) {
       return
     }
-    this.cartService.updateProductAmount(cartItem.cake.name, --cartItem.amount)
+    this.cartService.updateProductAmount(cartItem.cake._id, --cartItem.amount)
   }
 
   existCoupun() {

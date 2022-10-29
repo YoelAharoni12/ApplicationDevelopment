@@ -78,7 +78,7 @@
             <div class="amount">{{cartitem.cake.price * cartitem.amount}}</div>
           </div>
           <div class="remove">
-            <img src="../../../assets/img/picture4.jpg" (click)="removeProduct(cartitem.cake.name)" alt="">
+            <img src="../../../assets/img/picture4.jpg" (click)="removeProduct(cartitem.cake._id)" alt="">
           </div>
         </div>
       </div>
@@ -108,7 +108,8 @@
                   Wrong coupon
                 </div>
               </div>
-              <button class="apply-btn btn btn-primary btn-md" (click)="applyCoupon()">Apply</button>
+              <button style="background-color: #1a3771 !important" class="apply-btn btn btn-primary btn-md" (click)="applyCoupon()">Apply
+              </button>
             </div>
           </div>
         </div>
@@ -124,12 +125,10 @@
         <div class="total-amount">{{totalPrice$|async}}</div>
       </div>
       <div class="payment-buttons">
-        <button class="btn btn-primary btn-md" id="continue-button" routerLink="/cakes-catalog">Continue shopping
+        <button class="btn btn-primary btn-md" id="continue-button" routerLink="/main-site" style="background-color: #1a3771 !important">
+          Continue shopping
         </button>
-        <!-- link dont work -->
-        <a href="orderPage.html" title='Checkout'>
-          <button class="btn btn-primary btn-md">Checkout</button>
-        </a>
+          <button class="btn btn-primary btn-md" style="background-color: #1a3771 !important" routerLink="/orderPage">Checkout</button>
       </div>
     </div>
   </div>
@@ -141,6 +140,4 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
 </body>
-
-
 </html>

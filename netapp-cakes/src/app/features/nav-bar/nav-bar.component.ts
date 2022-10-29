@@ -9,12 +9,11 @@ import {Observable} from "rxjs";
 })
 export class NavBarComponent implements OnInit {
   quantity: Observable<number>
-
   constructor(private cartService: CartService) {
+
   }
 
   ngOnInit(): void {
     this.quantity = this.cartService.productsQuantity$()
   }
-
 }

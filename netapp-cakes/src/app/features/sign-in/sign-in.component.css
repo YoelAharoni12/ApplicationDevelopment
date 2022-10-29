@@ -1,32 +1,23 @@
-* {
 
-  box-sizing: border-box;
-}
-
-body {
+#parent {
 
   background-color: #777;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("src/assets/img/sign-in.jpg");
-
-
-  /* Full height */
+  background-image: url('../../../assets/img/sign-in.jpg');
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  width: 100%;
 }
 
 
 
 #container {
-
   background-color: #fff;
   border-radius: 20px;
   width: 320px;
-  height: 450px;
   text-align: center;
   padding: 20px 40px;
   margin-top: 20vh;

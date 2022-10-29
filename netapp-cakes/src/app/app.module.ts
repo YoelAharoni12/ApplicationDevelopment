@@ -20,6 +20,10 @@ import { ChocolateMousseComponent } from './features/desserts/chocolate-mousse/c
 import { FruitsComponent } from './features/desserts/fruits/fruits.component';
 import { AddProductComponent } from './features/add-product/add-product.component';
 import { RemoveProductComponent } from './features/remove-product/remove-product.component';
+import { OrderPageComponent } from './features/order-page/order-page.component';
+import { PaymentPageComponent } from './features/payment-page/payment-page.component';
+import { OrderConfirmationComponent } from './features/order-confirmation/order-confirmation.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { RemoveProductComponent } from './features/remove-product/remove-product
     ChocolateMousseComponent,
     FruitsComponent,
     AddProductComponent,
-    RemoveProductComponent
+    RemoveProductComponent,
+    OrderPageComponent,
+    PaymentPageComponent,
+    OrderConfirmationComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,7 @@ import { RemoveProductComponent } from './features/remove-product/remove-product
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
