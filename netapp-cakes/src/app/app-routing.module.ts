@@ -11,22 +11,30 @@ import {SpecialCookiesComponent} from "./features/cookies/special-cookies/specia
 import {ChocolateChipsComponent} from "./features/cookies/chocolate-chips/chocolate-chips.component";
 import {ChocolateMousseComponent} from "./features/desserts/chocolate-mousse/chocolate-mousse.component";
 import {FruitsComponent} from "./features/desserts/fruits/fruits.component";
+import {AddProductComponent} from "./features/add-product/add-product.component";
+import {RemoveProductComponent} from "./features/remove-product/remove-product.component";
+import {OrderPageComponent} from "./features/order-page/order-page.component";
+import {PaymentPageComponent} from "./features/payment-page/payment-page.component";
+import {OrderConfirmationComponent} from "./features/order-confirmation/order-confirmation.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'sign-in', pathMatch: 'full'},
   {path: 'sign-in', component: SignInComponent},
   {path: 'birthday-cakes', component: BirthdayComponent},
   {path: 'main-site', component: MainSiteComponent},
-  {path: 'shoppingCart', component: ShoppingCartComponent},
   {path: 'stripeCake', component: StripeCakesComponent},
   {path: 'frenchPatisserie', component: FrenchPatiseryComponent},
   {path: 'muffinPatisserie', component: MuffinPatiseryComponent},
   {path: 'specialCookies', component: SpecialCookiesComponent},
   {path: 'chocolateChips', component: ChocolateChipsComponent},
   {path: 'chocolateMousse', component: ChocolateMousseComponent},
-  {path: 'fruits', component: FruitsComponent}
-
-
+  {path: 'fruits', component: FruitsComponent},
+  {path: 'addProduct', component: AddProductComponent},
+  {path: 'removeProduct', component: RemoveProductComponent},
+  {path: 'shoppingCart', component: ShoppingCartComponent},
+  {path: 'orderPage', component: OrderPageComponent},
+  {path: 'payment', component: PaymentPageComponent},
+  {path: 'orderConfirmation', component: OrderConfirmationComponent},
 ];
 
 @NgModule({

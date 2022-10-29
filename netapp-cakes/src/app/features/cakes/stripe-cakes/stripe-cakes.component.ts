@@ -26,11 +26,15 @@ export class StripeCakesComponent implements OnInit {
     this.cartService.addProduct(cake)
   }
 
-  removeCake(cakeName: string) {
-    this.cartService.removeProduct(cakeName)
+  removeCake(cakeId: string) {
+    this.cartService.removeProduct(cakeId)
   }
 
-  isincart(cakeName: string) {
-    return !!this.cartService.cart$.getValue()[cakeName]
+  isincart(cakeId: string) {
+    return !!this.cartService.cart$.getValue()[cakeId]
+  }
+
+  searchItem(name: any) {
+    this.stripeCakes = this.cakeService.getProducts$().pipe(map((cakes) => cakes.filter(cake => cake.category === 'stripeCakes' && cake.name.toLowerCase().includes(name.value))))
   }
 }

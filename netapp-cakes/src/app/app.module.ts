@@ -18,6 +18,12 @@ import { SpecialCookiesComponent } from './features/cookies/special-cookies/spec
 import { ChocolateChipsComponent } from './features/cookies/chocolate-chips/chocolate-chips.component';
 import { ChocolateMousseComponent } from './features/desserts/chocolate-mousse/chocolate-mousse.component';
 import { FruitsComponent } from './features/desserts/fruits/fruits.component';
+import { AddProductComponent } from './features/add-product/add-product.component';
+import { RemoveProductComponent } from './features/remove-product/remove-product.component';
+import { OrderPageComponent } from './features/order-page/order-page.component';
+import { PaymentPageComponent } from './features/payment-page/payment-page.component';
+import { OrderConfirmationComponent } from './features/order-confirmation/order-confirmation.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +39,12 @@ import { FruitsComponent } from './features/desserts/fruits/fruits.component';
     SpecialCookiesComponent,
     ChocolateChipsComponent,
     ChocolateMousseComponent,
-    FruitsComponent
+    FruitsComponent,
+    AddProductComponent,
+    RemoveProductComponent,
+    OrderPageComponent,
+    PaymentPageComponent,
+    OrderConfirmationComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +52,7 @@ import { FruitsComponent } from './features/desserts/fruits/fruits.component';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

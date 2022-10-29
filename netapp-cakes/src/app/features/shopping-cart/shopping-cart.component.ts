@@ -19,17 +19,16 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   coupunList = {
-
     effiCoupon: 100,
     yoelCoupon: 50,
     sharifiCoupon: 20
-
   }
 
   ngOnInit(): void {
     this.cartService.getCart$().subscribe(data => this.cartItems = data)
     this.quantityCartitems = this.cartService.productsQuantity$()
     this.totalPrice$ = this.cartService.totalPrice$()
+    this.cartService.totalPrice$().subscribe(console.log)
   }
 
   removeProduct(cakeName: string) {
@@ -41,22 +40,15 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   addamount(cartItem: { cake: Cake; amount: number }) {
-    this.cartService.updateProductAmount(cartItem.cake.name, ++cartItem.amount)
+    this.cartService.updateProductAmount(cartItem.cake._id, ++cartItem.amount)
   }
 
   decreaseAmount(cartItem: { cake: Cake; amount: number }) {
     if (cartItem.amount === 0) {
       return
     }
-    this.cartService.updateProductAmount(cartItem.cake.name, --cartItem.amount)
+    this.cartService.updateProductAmount(cartItem.cake._id, --cartItem.amount)
   }
-
-  existCoupun() {
-    // @ts-ignore
-    const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
-    return !!Object.keys(this.coupunList).find(x => x === couponValue)
-  }
-
   applyCoupon() {
     // @ts-ignore
     const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
@@ -67,8 +59,13 @@ export class ShoppingCartComponent implements OnInit {
       if (totalPrice === 0) {
         return 0
       }
-      // @ts-ignore
-      return this.existCopun ? totalPrice - this.coupunList[priceOff] : totalPrice;
+      if (this.existCopun) {
+        // @ts-ignore
+        return totalPrice - this.coupunList[priceOff];
+      } else {
+
+        return totalPrice;
+      }
     }))
 
   }

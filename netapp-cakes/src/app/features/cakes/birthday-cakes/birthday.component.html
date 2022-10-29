@@ -19,9 +19,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>חנות הקינוחים של הודיה</title>
 </head>
-
 <body>
 <app-nav-bar></app-nav-bar>
+<figure class="figure" style="width: 100%">
+  <img style="width: 100%" src="../../../../assets/img/Cakes.png" class="figure-img img-fluid rounded">
+</figure>
 <div class="cake-list-container">
   <h2 class="text-center">birthday cakes</h2>
   <hr class="bg-dark border-2 border-top border-dark">
@@ -34,11 +36,13 @@
           <p class="card-text">{{cake.description}}</p>
           <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
         </div>
-        <div class="d-grid gap-2" *ngIf="!isincart(cake.name);else elseBlock">
-          <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button" (click)="addCake(cake)">add to cart</button>
+        <div class="d-grid gap-2" *ngIf="!isincart(cake._id);else elseBlock">
+          <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button" (click)="addCake(cake)">add to
+            cart
+          </button>
         </div>
         <ng-template #elseBlock>
-          <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake.name)">remove from
+          <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake._id)">remove from
             cart
           </button>
         </ng-template>

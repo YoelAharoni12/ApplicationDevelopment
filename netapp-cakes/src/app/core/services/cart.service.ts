@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {BehaviorSubject, map, Observable} from 'rxjs';
 import {Cake} from "../../shared/models/cake";
 
+
 @Injectable()
 export class CartService {
   cart$ = new BehaviorSubject<Record<string, { cake: Cake; amount: number }>>({});
@@ -11,19 +12,19 @@ export class CartService {
 
   addProduct(cakeToAdd: Cake) {
     let cart = {...this.cart$.value};
-    cart[cakeToAdd.name] = {cake: cakeToAdd, amount: 1};
+    cart[cakeToAdd._id] = {cake: cakeToAdd, amount: 1};
     this.cart$.next(cart);
   }
 
-  removeProduct(cakeName: string) {
+  removeProduct(cakeId: string) {
     let cart = {...this.cart$.value};
-    delete cart[cakeName];
+    delete cart[cakeId];
     this.cart$.next(cart);
   }
 
-  updateProductAmount(cakeName: string, amount: number) {
+  updateProductAmount(cakeId: string, amount: number) {
     let cart = {...this.cart$.value};
-    cart[cakeName].amount = amount;
+    cart[cakeId].amount = amount;
     this.cart$.next(cart);
   }
 
@@ -32,6 +33,7 @@ export class CartService {
   }
 
   totalPrice$(): Observable<number> {
+    const a = {a: 5, b: 6}
     return this.cart$.pipe(
       map((cart: Record<string, { cake: Cake, amount: number }>) =>
         Object.values(cart).reduce(
@@ -49,7 +51,8 @@ export class CartService {
   getCart$() {
     return this.cart$.pipe(map((cart) => Object.values(cart)));
   }
-  resetCart(){
+
+  resetCart() {
     this.cart$.next({});
   }
 
