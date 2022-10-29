@@ -19,11 +19,9 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   coupunList = {
-
     effiCoupon: 100,
     yoelCoupon: 50,
     sharifiCoupon: 20
-
   }
 
   ngOnInit(): void {
@@ -51,13 +49,6 @@ export class ShoppingCartComponent implements OnInit {
     }
     this.cartService.updateProductAmount(cartItem.cake._id, --cartItem.amount)
   }
-
-  existCoupun() {
-    // @ts-ignore
-    const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
-    return !!Object.keys(this.coupunList).find(x => x === couponValue)
-  }
-
   applyCoupon() {
     // @ts-ignore
     const couponValue: string = document.getElementsByClassName('coupon-text')[0].value;
@@ -68,8 +59,13 @@ export class ShoppingCartComponent implements OnInit {
       if (totalPrice === 0) {
         return 0
       }
-      // @ts-ignore
-      return this.existCopun ? totalPrice - this.coupunList[priceOff] : totalPrice;
+      if (this.existCopun) {
+        // @ts-ignore
+        return totalPrice - this.coupunList[priceOff];
+      } else {
+
+        return totalPrice;
+      }
     }))
 
   }
