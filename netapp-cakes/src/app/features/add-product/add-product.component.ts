@@ -33,7 +33,6 @@ export class AddProductComponent {
   }
 
   onSubmit() {
-    console.log(this.cakeToAdd)
     this.cakeToAdd.image = 'data:image/jpg;base64,' + this.base64Output
     this.cakeService.addCake(this.cakeToAdd)
 
