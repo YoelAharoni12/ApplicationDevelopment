@@ -28,7 +28,6 @@ export class ShoppingCartComponent implements OnInit {
     this.cartService.getCart$().subscribe(data => this.cartItems = data)
     this.quantityCartitems = this.cartService.productsQuantity$()
     this.totalPrice$ = this.cartService.totalPrice$()
-    this.cartService.totalPrice$().subscribe(console.log)
   }
 
   removeProduct(cakeName: string) {
@@ -59,13 +58,8 @@ export class ShoppingCartComponent implements OnInit {
       if (totalPrice === 0) {
         return 0
       }
-      if (this.existCopun) {
-        // @ts-ignore
-        return totalPrice - this.coupunList[priceOff];
-      } else {
-
-        return totalPrice;
-      }
+      // @ts-ignore
+      return this.existCopun ? totalPrice - this.coupunList[priceOff] : totalPrice;
     }))
 
   }

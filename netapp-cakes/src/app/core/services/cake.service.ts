@@ -6,6 +6,8 @@ import {Cake} from "../../shared/models/cake";
 
 @Injectable()
 export class CakeService {
+  private readonly productsUri = 'assets/data/products.json';
+  // ${environment.productsUrl}/${this.productsUri}
   constructor(private http: HttpClient) {
   }
 

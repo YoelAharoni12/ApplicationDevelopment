@@ -239,7 +239,7 @@
         <div class="required field">
           <label>Image</label>
           <input [(ngModel)]="cakeToAdd.image" type="file" name="product-image"
-                 (change)="onFileSelected($event)">{{base64Output}}
+                 (change)="onFileSelected($event)">
         </div>
         <div class="required field">
           <label>Category</label>
@@ -248,7 +248,7 @@
           </select>
         </div>
       </div>
-      <button type="submit" class="ui button positive add-cake-button" >Add cake</button>
+      <button type="submit" class="ui button positive add-cake-button" routerLink="/main-site" >Add cake</button>
     </form>
   </div>
 </div>
