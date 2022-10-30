@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-          crossorigin="anonymous"></script>
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -18,85 +18,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
-  <title>חנות הקינוחים של הודיה</title>
+  <title>Hodaya Bakery</title>
 </head>
 
 <body>
-<app-nav-bar></app-nav-bar>
-<div class="ui section divider"></div>
-<h3 class="ui header">management section</h3>
-<div>
-  <div class="ui animated positive  tiny button" tabindex="0" routerLink="/addProduct">
-    <div class="visible content">Add product</div>
-    <div class="hidden content">
-      <i class="plus square icon" style="visibility: visible;"></i>
+  <app-nav-bar></app-nav-bar>
+  <div class="ui section divider"></div>
+  <h3 class="ui header">management section</h3>
+  <div>
+    <div class="ui animated positive  tiny button" tabindex="0" routerLink="/addProduct">
+      <div class="visible content">Add product</div>
+      <div class="hidden content">
+        <i class="plus square icon" style="visibility: visible;"></i>
+      </div>
     </div>
   </div>
-</div>
-<div id="hero">
-  <div class="container">
+  <div id="hero">
+    <div class="container">
 
-    <div class="hero-content">
-      <h1 id="h1main">
-        cake shop
-      </h1>
+      <div class="hero-content">
+        <h1 id="h1main">
+          cake shop
+        </h1>
+        <p>
+          Your treat is right here
+        </p>
+        <button id="myBtn" routerLink="/birthday-cakes">catalog</button>
+      </div>
+    </div>
+
+  </div>
+
+  <section id="home-experience">
+    <div id="divVideo">
+      <video id="video" autoplay muted loop playsinline>
+        <source src="../../../assets/img/123_Trim.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="experience-content">
+      <h2>Our <span class="text-primary">treat</span></h2>
+      <h3>
+        We prepare the cakes and desserts with lots of love and passion,
+        We do not compromise on the quality of the products so that your indulgence is perfect
+      </h3>
+
+    </div>
+  </section>
+  <section id="features">
+    <div class="box flag-left">
+      <i class="fas fa-seedling fa-4x"></i>
+      <h3>birthdays</h3>
       <p>
-        Your treat is right here
+        A diverse selection of birthday cakes
       </p>
-      <button id="myBtn" routerLink="/birthday-cakes">catalog</button>
     </div>
-  </div>
+    <div class="box flag-middle">
+      <i class="fas fa-seedling fa-4x"></i>
+      <h3>Custom made cakes </h3>
+      <p>
+        A large selection of cakes and cookies for events
+      </p>
+    </div>
+    <div class="box flag-right">
+      <i class="fas fa-glass-cheers fa-4x"></i>
+      <h3>desserts</h3>
+      <p>
+        A selection of amazing and very tasty desserts
+      </p>
+    </div>
+  </section>
 
-</div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary header-navbar ">
+    <a class="navbar-brand" href="#" id="futer">.</a>
 
-<section id="home-experience">
-  <div id="divVideo">
-    <video id="video" autoplay muted loop playsinline>
-      <source src="../../../assets/img/123_Trim.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="experience-content">
-    <h2>Our <span class="text-primary">treat</span></h2>
-    <h3>
-      We prepare the cakes and desserts with lots of love and passion,
-      We do not compromise on the quality of the products so that your indulgence is perfect
-    </h3>
+  </nav>
 
-  </div>
-</section>
-<section id="features">
-  <div class="box flag-left">
-    <i class="fas fa-seedling fa-4x"></i>
-    <h3>birthdays</h3>
-    <p>
-      A diverse selection of birthday cakes
-    </p>
-  </div>
-  <div class="box flag-middle">
-    <i class="fas fa-seedling fa-4x"></i>
-    <h3>Custom made cakes </h3>
-    <p>
-      A large selection of cakes and cookies for events
-    </p>
-  </div>
-  <div class="box flag-right">
-    <i class="fas fa-glass-cheers fa-4x"></i>
-    <h3>desserts</h3>
-    <p>
-      A selection of amazing and very tasty desserts
-    </p>
-  </div>
-</section>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary header-navbar ">
-  <a class="navbar-brand" href="#" id="futer">.</a>
-
-</nav>
-
-<script>
-  $('.dropdown').hover(function () {
-    $('.dropdown-menu', this).trigger('click');
-  });
-</script>
+  <script>
+    $('.dropdown').hover(function () {
+      $('.dropdown-menu', this).trigger('click');
+    });
+  </script>
 
 </body>

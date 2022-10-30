@@ -23,6 +23,8 @@ import { RemoveProductComponent } from './features/remove-product/remove-product
 import { OrderPageComponent } from './features/order-page/order-page.component';
 import { PaymentPageComponent } from './features/payment-page/payment-page.component';
 import { OrderConfirmationComponent } from './features/order-confirmation/order-confirmation.component';
+import { AboutComponent } from './features/about/about.component';
+import { ContactUsComponent } from './features/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -45,6 +47,8 @@ import { OrderConfirmationComponent } from './features/order-confirmation/order-
     OrderPageComponent,
     PaymentPageComponent,
     OrderConfirmationComponent,
+    AboutComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
