@@ -142,12 +142,12 @@
               <b class="dollar-icon">{{cake.price}}<i class="shekel sign icon"></i></b>
             </div>
             <div class="d-grid gap-2" *ngIf="!isincart(cake._id);else elseBlock">
-              <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button" (click)="addCake(cake)">add to
+              <button class="rounded-2 btn btn-primary btn-lg add-to-cart" type="button" (click)="addCake(cake)">Add to
                 cart
               </button>
             </div>
             <ng-template #elseBlock>
-              <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake._id)">remove from
+              <button class="rounded-2 btn btn-warning btn-lg" type="button" (click)="removeCake(cake._id)">Remove from
                 cart
               </button>
             </ng-template>

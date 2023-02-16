@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CartService} from "../../core/services/cart.service";
 
 @Component({
   selector: 'app-order-confirmation',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderConfirmationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cartService:CartService) { }
 
   ngOnInit(): void {
+    this.cartService.checkout()
   }
 
 }
