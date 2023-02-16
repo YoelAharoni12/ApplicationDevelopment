@@ -18,6 +18,7 @@ export class CakeService {
   }
 
   addCake(cake: Cake) {
+    console.log("asdasd")
      this.http.post(`http://localhost:4000/products`, cake).subscribe(console.log)
   }
 }

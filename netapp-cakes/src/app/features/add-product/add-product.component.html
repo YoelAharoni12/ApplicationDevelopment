@@ -20,7 +20,7 @@
 <body>
 <div class="container-fluid row">
   <div class="CartContainer container-fluid">
-    <form (submit)="onSubmit()" class="ui form">
+    <form  class="ui form">
       <h4 class="ui dividing header">Add product</h4>
       <div class="two fields">
         <div class="required field">
@@ -51,7 +51,7 @@
           </select>
         </div>
       </div>
-      <button type="submit" class="ui button positive add-cake-button" routerLink="/main-site" >Add cake</button>
+      <button (click)="onSubmit()" type="submit" class="ui button positive add-cake-button" routerLink="/main-site" >Add cake</button>
     </form>
   </div>
 </div>

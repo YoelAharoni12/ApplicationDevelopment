@@ -15,10 +15,10 @@
 
 
 #container {
-  height: 50%;
+  height: 42vh;
   background-color: #fff;
   border-radius: 20px;
-  width: 15%;
+  width: 31vh;
   text-align: center;
   padding: 20px 40px;
   margin-top: 20vh;
@@ -65,7 +65,7 @@ input {
   border: 0;
   padding: 12px 15px;
   margin: 8px 0;
-  width: 100%;
+  width: 80%;
   border-radius: 15px;
 
 }

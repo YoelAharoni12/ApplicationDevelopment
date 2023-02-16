@@ -128,7 +128,7 @@
   font-size: 18px;
   padding: 10px;
   border: none;
-  background: blue;
+  background-color: #1a3771;
   color: #fff;
   border-radius: 25px;
   align-items: center;
@@ -205,6 +205,7 @@
 }
 
 #video {
+  height: 26vh;
   float: left;
   width: 75%;
   margin-top: 5%;
