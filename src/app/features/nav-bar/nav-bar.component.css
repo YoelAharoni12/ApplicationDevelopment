@@ -1,0 +1,102 @@
+.cake-list-container {
+  padding: 4% !important;
+}
+
+.header-navbar {
+  background: #1a3771 !important;
+}
+
+.dollar-icon {
+  float: left;
+}
+
+.nav-item.active {
+  color: rgb(224, 120, 172);
+}
+
+.bg-primary {
+  color: white;
+}
+
+.nav-link.active,
+.MainButton:hover {
+  color: rgb(248, 169, 242) !important;
+}
+
+#InternalNavbar {
+  height: 100px;
+}
+
+.main_nav {
+  justify-content: center;
+}
+
+.logo-cake {
+  text-align: right;
+  margin: 0 !important;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.left-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+.add-to-cart {
+  background: #1a3771;
+}
+
+.symbol {
+  width: 130px;
+  height: 80px;
+  float: right;
+}
+
+.checkSymbol {
+  margin-left: auto;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  color: black;
+}
+
+.figure {
+  width: 100%;
+}
+
+.figure-img {
+  width: 100%;
+}
+.navbar-nav {
+  justify-content: center;
+}
+
+.add-container {
+  padding: 0 13% 0 0;
+}
+.add-button {
+  width: 120% !important;
+}

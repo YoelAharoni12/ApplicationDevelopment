@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+  <title>Hodaya Bakery</title>
+
+</head>
+
+<body>
+
+  <app-nav-bar></app-nav-bar>
+  <div class="container-fluid row">
+
+    <nav class="ui mini steps container-fluid">
+      <a class="active step">
+        <i class="eye icon"></i>
+        <div class="content">
+          <div class="title">Shopping cart</div>
+        </div>
+      </a>
+      <a class="step">
+        <i class="pencil alternate icon"></i>
+        <div class="content">
+          <div class="title">Order page</div>
+        </div>
+      </a>
+      <a class="step">
+        <i class="dollar icon"></i>
+        <div class="content">
+          <div class="title">Payment page</div>
+        </div>
+      </a>
+      <a class="step">
+        <i class="paper plane outline icon"></i>
+        <div class="content">
+          <div class="title">Order Confirmation</div>
+        </div>
+      </a>
+
+    </nav>
+
+    <div class="CartContainer container-fluid">
+      <div class="row">
+        <div class="Header">
+          <h3 class="Heading">Shopping Cart</h3>
+          <h5 class="Action" (click)="resetCart()">Remove all</h5>
+        </div>
+      </div>
+
+      <div class="row" *ngFor="let cartitem of cartItems">
+        <div class="Cart-Items">
+          <div class="image-box">
+            <img class="img-cartitem" src="{{cartitem.cake.image}}" alt="">
+          </div>
+          <div class="about">
+            <h1 class="title">{{cartitem.cake.name}}</h1>
+            <h3 class="subtitle">{{cartitem.cake.description}}</h3>
+          </div>
+          <div class="counter">
+            <div class="options-btn" (click)="decreaseAmount(cartitem)">-</div>
+            <div class="count" [innerHtml]="cartitem.amount"></div>
+            <div class="options-btn" (click)="addamount(cartitem)">+</div>
+            <div class="prices">
+              <div class="amount">{{cartitem.cake.price * cartitem.amount}}</div>
+            </div>
+            <div class="remove">
+              <img src="../../../assets/img/picture4.jpg" (click)="removeProduct(cartitem.cake._id)" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>shipping</label>
+        <select class="ui small fluid dropdown">
+          <option value="">Select shipping</option>
+          <option value="Pickup">Pickup from Yavne</option>
+          <option value="Dimona">Dimona</option>
+          <option value="Netanya">Netanya</option>
+          <option value="Ariel">Ariel</option>
+        </select>
+      </div>
+      <hr>
+
+      <div class="checkout-section col-lg-6 col-md-6 col-12 mb-4">
+        <div class="down1">
+          <div class="cuppon">
+            <div>
+              <h5>Coupon</h5>
+              <div>
+                <div class="inline field">
+                  <input type="text" class="coupon-text" placeholder="Enter coupon code">
+                  <div *ngIf="!existCopun" class="ui left pointing red basic label">
+                    Wrong coupon
+                  </div>
+                </div>
+                <button style="background-color: #1a3771 !important" class="apply-btn btn btn-primary btn-md"
+                  (click)="applyCoupon()">Apply
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="checkout">
+        <div class="total">
+          <div>
+            <div class="Subtotal">Sub-Total</div>
+            <div class="items">{{(quantityCartitems|async) + " items"}}</div>
+          </div>
+          <div class="total-amount">{{totalPrice$|async}}</div>
+        </div>
+        <div class="payment-buttons">
+          <button class="btn btn-primary btn-md" id="continue-button" routerLink="/main-site"
+            style="background-color: #1a3771 !important">
+            Continue shopping
+          </button>
+          <button class="btn btn-primary btn-md" style="background-color: #1a3771 !important"
+            routerLink="/orderPage">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
