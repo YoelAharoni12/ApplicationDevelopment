@@ -18,10 +18,12 @@ import { PaymentPageComponent } from "./features/payment-page/payment-page.compo
 import { OrderConfirmationComponent } from "./features/order-confirmation/order-confirmation.component";
 import { AboutComponent } from "./features/about/about.component";
 import { ContactUsComponent } from "./features/contact-us/contact-us.component";
+import {SignUpComponent} from "./features/sign-up/sign-up.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
+  { path: 'sign-up', component: SignUpComponent },
   { path: 'birthday-cakes', component: BirthdayComponent },
   { path: 'main-site', component: MainSiteComponent },
   { path: 'stripeCake', component: StripeCakesComponent },

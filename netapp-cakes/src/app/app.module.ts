@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BirthdayComponent} from './features/cakes/birthday-cakes/birthday.component';
@@ -25,6 +24,8 @@ import { PaymentPageComponent } from './features/payment-page/payment-page.compo
 import { OrderConfirmationComponent } from './features/order-confirmation/order-confirmation.component';
 import { AboutComponent } from './features/about/about.component';
 import { ContactUsComponent } from './features/contact-us/contact-us.component';
+import { SignUpComponent } from './features/sign-up/sign-up.component';
+import { NgxToastNotifyModule, NgxToastNotifyService } from "ngx-toast-notify";
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { ContactUsComponent } from './features/contact-us/contact-us.component';
     OrderConfirmationComponent,
     AboutComponent,
     ContactUsComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -57,8 +59,16 @@ import { ContactUsComponent } from './features/contact-us/contact-us.component';
     AppRoutingModule,
     CoreModule,
     FormsModule,
+    NgxToastNotifyModule.forRoot({
+      toastTimeoutInSeconds:  6,
+      animationDelayInMilliSeconds:  500,
+      enableClosebutton:  true,
+      position:  'top-center',
+      backgroundColor:  '',
+      textColor:  'black'
+    })
   ],
-  providers: [],
+  providers: [AppRoutingModule, NgxToastNotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

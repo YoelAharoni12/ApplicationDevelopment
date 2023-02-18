@@ -9,6 +9,7 @@ body {
 }
 
 .CartContainer {
+  padding: 15px 15px 15px 15px;
   width: 40%;
   height: 90%;
   background-color: #ffffff;

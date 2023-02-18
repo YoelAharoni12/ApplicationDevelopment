@@ -5,6 +5,15 @@
 export const environment = {
   production: false,
   productsUrl: 'http://localhost:4200',
+  firebase: {
+    apiKey: "AIzaSyB9oeEi4D7ihaeegiWNgXcn7nx8Y5qSHwY",
+    authDomain: "hodaya-cakes.firebaseapp.com",
+    projectId: "hodaya-cakes",
+    storageBucket: "hodaya-cakes.appspot.com",
+    messagingSenderId: "1003231528956",
+    appId: "1:1003231528956:web:3a550ca31be48b19265479",
+    databaseURL: "https://hodaya-cakes-default-rtdb.europe-west1.firebasedatabase.app/"
+  }
 };
 
 /*
