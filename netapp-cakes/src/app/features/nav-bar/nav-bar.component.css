@@ -90,6 +90,13 @@
 .figure-img {
   width: 100%;
 }
-.navbar-nav{
+.navbar-nav {
   justify-content: center;
+}
+
+.add-container {
+  padding: 0 13% 0 0;
+}
+.add-button {
+  width: 120% !important;
 }

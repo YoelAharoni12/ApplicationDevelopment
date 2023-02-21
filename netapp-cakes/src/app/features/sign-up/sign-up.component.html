@@ -1,0 +1,21 @@
+<div id="parent">
+  <form id="container" action="#" >
+    <h1>Sign Up</h1>
+    <div>
+      <input [(ngModel)]="contact.firstName" name="firstName" type="text" placeholder="First Name"/>
+    </div>
+    <div>
+      <input [(ngModel)]="contact.lastName" name="lastName" type="text" placeholder="Last Name"/>
+    </div>
+    <div>
+      <input [(ngModel)]="contact.email" name="email" type="email" placeholder="Email"/>
+    </div>
+    <div>
+      <input type="email" placeholder="Confirm Email" #confirm/>
+    </div>
+    <div>
+      <input [(ngModel)]="contact.password" name="password" type="password" placeholder="Password" />
+    </div><br>
+    <button class="temp" (click)="signUp(confirm.value)">sign up</button>
+  </form>
+</div>
